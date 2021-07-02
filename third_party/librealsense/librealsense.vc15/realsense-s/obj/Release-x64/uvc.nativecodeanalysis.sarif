@@ -1,0 +1,517 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29913.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0007B1C0 -il C:\\Users\\migue\\AppData\\Local\\Temp\\_CL_402603aeast -typedil -f ..\\..\\src\\uvc.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829913 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\migue\\Documents\\_TFG\\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\\hand_tracking_samples_D400-master\\third_party\\librealsense\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DRS_USE_WMF_BACKEND -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -MD -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -omp -D_OPENMP=200203 -Foobj\\Release-x64\\uvc.obj -Fdobj\\Release-x64\\realsense-s.pdb -Gd -analyze:projectdirectory C:\\Users\\migue\\Documents\\_TFG\\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\\hand_tracking_samples_D400-master\\third_party\\librealsense\\librealsense.vc15\\realsense-s -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/uvc-libuvc.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "f0dd07c1957a30b43644566b776634ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/include/librealsense/rscore.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "56ff2a589ac4d274f5153eeeef6dead1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/types.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0f79c982f6c184c351f41e8f6a323273"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/uvc.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "20e716eb4ff58ff813105521b949e80f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/stream.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "d49d2961258360e7eac71cf40db31b9d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/device.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6a923050d07d4fabdb1819dfff811e08"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/types.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "19752967b52d1c49ccb362bf5ce1fe8e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/include/librealsense/rs.h"
+          },
+          "hashes": {
+            "md5": "19489c1e1620b5adc4335c0d531b5a1f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/image.h"
+          },
+          "hashes": {
+            "md5": "512ac1455f8b687dd52aee80d012be58"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/timestamps.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "43263430fba28fbc1c4bd473ed1faae2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/archive.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "45203c3e9cd432489831c7429a80dc10"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/sync.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "985fc2a5007ad5978b7fe9384cdf8df8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/timestamps.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6a27422ac2934347fba4a2bd8292a633"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/sync.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "46c3445eef4972a1ed6284a79e19215a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/stream.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0b3850db368180db5bb8a4d6184aea47"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ivcam-device.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "866323ae73e3aeb1547a1f46f3ece178"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/sr300.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "d81d2447a99349eb8fa15f8751e26541"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/sr300.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "56e171dfec212d41bd06166cce0ba436"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/ivcam-private.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "1427052be28ef7c1966085e76c739282"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/rs.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6b9a67db520deeb18cf35c0013ec9538"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/context.h"
+          },
+          "hashes": {
+            "md5": "328dad8a61b2c19c85d455a5b5f61924"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ds-private.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "21dc71a9cc183bf0eff846196c15796f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/r200.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "b9e579bd2f7584dfc248723754dc75e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/r200.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "b2ed55ed6d76f8e0f9935460a1a64420"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/ds-device.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "c295749862e2ef5d81470ffa955fb994"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/hw-monitor.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "2841ea8ec1b9de0fb7b28eddf963ed2a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/motion-module.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "796ec027a3a0d2a15f4a69d56cfec61e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/motion-module.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3d65ac32a6127a5aac01a48888ee9717"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/log.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "8bf3e33486d48880d97fed96e5769d21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ivcam-private.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "a24152aed17e85ac6fa893aa1cd75399"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ivcam-device.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "e8f5103cb56fbf819da1f8539a6e1bc8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/include/librealsense/rsutil.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "9c43098c0e977de44f918b8c86f72b04"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/image.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3110e65f9a5a996f122d6bb7cb0ca6b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/hw-monitor.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "488cfaedd90012ed988c9faeeaf13953"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/f200.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "328f5a15ab8128074eacd4692743627d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/f200.h"
+          },
+          "hashes": {
+            "md5": "4ceab4939d3c4d086cbc41508ac0cc73"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ds-device.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "c348ee104e8abb992ea21be9058a2d05"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/ds-private.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "ec912e9e03a38c8a4f6ad99ce023b886"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/device.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "4b96e7432a352a701f53f49a2b2bc07f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/zr300.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "59ade915524712d7fc0fca8a60278409"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/context.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "f15be5412c40d95ed423dcddc40ce153"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/archive.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "25d7533f5f106d16c80d3211b2137051"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/migue/Documents/_TFG/_HAND_TRACKING_SAMPLES_D400 ORIGINAL/hand_tracking_samples_D400-master/third_party/librealsense/src/zr300.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "8d7c864763b20ba756c3abd4ef0b3cfe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/uvc.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "ae7c49fa7316bdcb648db8a583edcb4f"
+          }
+        }
+      ]
+    }
+  ]
+}

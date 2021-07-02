@@ -1,0 +1,44 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29913.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0007B1C0 -il C:\\Users\\migue\\AppData\\Local\\Temp\\_CL_345ed180ast -typedil -f ..\\..\\src\\verify.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829913 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -I C:\\Users\\migue\\Documents\\_TFG\\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\\hand_tracking_samples_D400-master\\third_party\\librealsense\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DRS_USE_WMF_BACKEND -D_CRT_SECURE_NO_WARNINGS -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -D_MT -D_DLL -GS -D_M_FP_PRECISE -omp -D_OPENMP=200203 -Foobj\\Release-x64\\verify.obj -Fdobj\\Release-x64\\realsense-s.pdb -Gd -analyze:projectdirectory C:\\Users\\migue\\Documents\\_TFG\\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\\hand_tracking_samples_D400-master\\third_party\\librealsense\\librealsense.vc15\\realsense-s -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/src/verify.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "62c8633b105503a5b47ae10e9c939063"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/migue/documents/_tfg/_hand_tracking_samples_d400 original/hand_tracking_samples_d400-master/third_party/librealsense/include/librealsense/rs.h"
+          },
+          "hashes": {
+            "md5": "19489c1e1620b5adc4335c0d531b5a1f"
+          }
+        }
+      ]
+    }
+  ]
+}

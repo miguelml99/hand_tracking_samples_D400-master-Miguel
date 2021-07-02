@@ -1,0 +1,1 @@
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\librealsense.vc15\realsense-s\obj\Debug-Win32\realsense-sd.lib

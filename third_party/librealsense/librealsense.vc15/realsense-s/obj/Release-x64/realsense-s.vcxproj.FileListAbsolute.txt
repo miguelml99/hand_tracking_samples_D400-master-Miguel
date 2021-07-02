@@ -1,0 +1,3 @@
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\librealsense.vc15\realsense-s\obj\Release-x64\realsense-s.lib
+C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\librealsense.vc15\realsense-s\obj\Release-x64\realsense-s.lib
+C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\third_party\librealsense\librealsense.vc15\realsense-s\obj\Release-x64\realsense-s.lib

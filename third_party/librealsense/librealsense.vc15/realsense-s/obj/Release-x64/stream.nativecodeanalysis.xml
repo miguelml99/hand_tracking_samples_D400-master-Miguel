@@ -1,0 +1,3030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_stream_interface', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_stream_interface::{dtor}</FUNCTION>
+    <DECORATED>??1rs_stream_interface@@UEAA@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_frame_ref', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_frame_ref::{dtor}</FUNCTION>
+    <DECORATED>??1rs_frame_ref@@UEAA@XZ</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>66</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_device', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_device::{dtor}</FUNCTION>
+    <DECORATED>??1rs_device@@UEAA@XZ</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>122</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_context', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_context::{dtor}</FUNCTION>
+    <DECORATED>??1rs_context@@UEAA@XZ</DECORATED>
+    <FUNCLINE>122</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>129</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_motion_callback', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_motion_callback::{dtor}</FUNCTION>
+    <DECORATED>??1rs_motion_callback@@UEAA@XZ</DECORATED>
+    <FUNCLINE>129</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>136</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_frame_callback', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_frame_callback::{dtor}</FUNCTION>
+    <DECORATED>??1rs_frame_callback@@UEAA@XZ</DECORATED>
+    <FUNCLINE>136</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_timestamp_callback', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_timestamp_callback::{dtor}</FUNCTION>
+    <DECORATED>??1rs_timestamp_callback@@UEAA@XZ</DECORATED>
+    <FUNCLINE>143</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\include\librealsense\</FILEPATH>
+      <FILENAME>rscore.hpp</FILENAME>
+      <LINE>150</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rs_log_callback', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rs_log_callback::{dtor}</FUNCTION>
+    <DECORATED>??1rs_log_callback@@UEAA@XZ</DECORATED>
+    <FUNCLINE>150</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'RS_STREAM_NATIVE_COUNT' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'RS_USER_QUEUE_SIZE' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>31</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'RS_MAX_EVENT_QUEUE_SIZE' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'RS_MAX_EVENT_TIME_OUT' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>90</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>90</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>90</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>90</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>90</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_stream' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>90</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_format@@@Z</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_format@@@Z</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_format' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_format@@@Z</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_preset@@@Z</DECORATED>
+    <FUNCLINE>92</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_preset@@@Z</DECORATED>
+    <FUNCLINE>92</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_preset' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_preset@@@Z</DECORATED>
+    <FUNCLINE>92</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_distortion@@@Z</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_distortion@@@Z</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_distortion' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_distortion@@@Z</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_option@@@Z</DECORATED>
+    <FUNCLINE>94</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_option@@@Z</DECORATED>
+    <FUNCLINE>94</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_option' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_option@@@Z</DECORATED>
+    <FUNCLINE>94</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>95</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_capabilities@@@Z</DECORATED>
+    <FUNCLINE>95</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>95</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_capabilities@@@Z</DECORATED>
+    <FUNCLINE>95</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>95</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_capabilities' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_capabilities@@@Z</DECORATED>
+    <FUNCLINE>95</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>96</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_source@@@Z</DECORATED>
+    <FUNCLINE>96</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>96</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_source@@@Z</DECORATED>
+    <FUNCLINE>96</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>96</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_source' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_source@@@Z</DECORATED>
+    <FUNCLINE>96</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>97</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_output_buffer_format@@@Z</DECORATED>
+    <FUNCLINE>97</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>97</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_output_buffer_format@@@Z</DECORATED>
+    <FUNCLINE>97</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>97</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_output_buffer_format' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_output_buffer_format@@@Z</DECORATED>
+    <FUNCLINE>97</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_event_source@@@Z</DECORATED>
+    <FUNCLINE>98</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_event_source@@@Z</DECORATED>
+    <FUNCLINE>98</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_event_source' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_event_source@@@Z</DECORATED>
+    <FUNCLINE>98</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_blob_type@@@Z</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_blob_type@@@Z</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_blob_type' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_blob_type@@@Z</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_camera_info@@@Z</DECORATED>
+    <FUNCLINE>100</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_camera_info@@@Z</DECORATED>
+    <FUNCLINE>100</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_camera_info' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_camera_info@@@Z</DECORATED>
+    <FUNCLINE>100</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_timestamp_domain@@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_timestamp_domain@@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_timestamp_domain' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_timestamp_domain@@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::is_valid' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::is_valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_frame_metadata' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::is_valid</FUNCTION>
+    <DECORATED>?is_valid@rsimpl@@YA_NW4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>110</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::float3::operator[]' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::float3::[]</FUNCTION>
+    <DECORATED>??Afloat3@rsimpl@@QEAAAEAMH@Z</DECORATED>
+    <FUNCLINE>110</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::operator==' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::==</FUNCTION>
+    <DECORATED>??8rsimpl@@YA_NAEBUfloat3@0@0@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>114</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::operator+' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::+</FUNCTION>
+    <DECORATED>??Hrsimpl@@YA?AUfloat3@0@AEBU10@0@Z</DECORATED>
+    <FUNCLINE>114</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>115</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::operator*' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::*</FUNCTION>
+    <DECORATED>??Drsimpl@@YA?AUfloat3@0@AEBU10@M@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>119</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::transpose' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::transpose</FUNCTION>
+    <DECORATED>?transpose@rsimpl@@YA?AUfloat3x3@1@AEBU21@@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>123</LINE>
+      <COLUMN>47</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'inv' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::inverse</FUNCTION>
+    <DECORATED>?inverse@rsimpl@@YA?AUpose@1@AEBU21@@Z</DECORATED>
+    <FUNCLINE>123</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>135</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::pixel_format_unpacker::provides_stream' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::pixel_format_unpacker::provides_stream</FUNCTION>
+    <DECORATED>?provides_stream@pixel_format_unpacker@rsimpl@@QEBA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>135</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::native_pixel_format::get_image_size' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_pixel_format::get_image_size</FUNCTION>
+    <DECORATED>?get_image_size@native_pixel_format@rsimpl@@QEBA_KHH@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>83</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_pixel_format::get_image_size</FUNCTION>
+    <DECORATED>?get_image_size@native_pixel_format@rsimpl@@QEBA_KHH@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>74</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_pixel_format::get_image_size</FUNCTION>
+    <DECORATED>?get_image_size@native_pixel_format@rsimpl@@QEBA_KHH@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>197</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::data_polling_request::{ctor}</FUNCTION>
+    <DECORATED>??0data_polling_request@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>197</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>211</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::firmware_version::{ctor}</FUNCTION>
+    <DECORATED>??0firmware_version@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>211</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>224</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::firmware_version::operator&lt;=' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::firmware_version::&lt;=</FUNCTION>
+    <DECORATED>??Nfirmware_version@rsimpl@@QEBA_NAEBV01@@Z</DECORATED>
+    <FUNCLINE>224</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::firmware_version::operator==' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::firmware_version::==</FUNCTION>
+    <DECORATED>??8firmware_version@rsimpl@@QEBA_NAEBV01@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>248</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::firmware_version::operator char const * __ptr64' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::firmware_version::operator const char *</FUNCTION>
+    <DECORATED>??Bfirmware_version@rsimpl@@QEBAPEBDXZ</DECORATED>
+    <FUNCLINE>248</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>300</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::{ctor}</FUNCTION>
+    <DECORATED>??0subdevice_mode_selection@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>300</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>305</LINE>
+      <COLUMN>55</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::get_unpacker</FUNCTION>
+    <DECORATED>?get_unpacker@subdevice_mode_selection@rsimpl@@QEBAAEBUpixel_format_unpacker@2@XZ</DECORATED>
+    <FUNCLINE>303</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>309</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::subdevice_mode_selection::get_width' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::get_width</FUNCTION>
+    <DECORATED>?get_width@subdevice_mode_selection@rsimpl@@QEBAHXZ</DECORATED>
+    <FUNCLINE>309</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>310</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::subdevice_mode_selection::get_height' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::get_height</FUNCTION>
+    <DECORATED>?get_height@subdevice_mode_selection@rsimpl@@QEBAHXZ</DECORATED>
+    <FUNCLINE>310</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>311</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::subdevice_mode_selection::get_framerate' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::get_framerate</FUNCTION>
+    <DECORATED>?get_framerate@subdevice_mode_selection@rsimpl@@QEBAHXZ</DECORATED>
+    <FUNCLINE>311</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>323</LINE>
+      <COLUMN>140</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::requires_processing</FUNCTION>
+    <DECORATED>?requires_processing@subdevice_mode_selection@rsimpl@@QEBA_NXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>323</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::subdevice_mode_selection::requires_processing' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::subdevice_mode_selection::requires_processing</FUNCTION>
+    <DECORATED>?requires_processing@subdevice_mode_selection@rsimpl@@QEBA_NXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>338</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback::{ctor}</FUNCTION>
+    <DECORATED>??0frame_callback@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>338</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>339</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback::frame_callback' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback::{ctor}</FUNCTION>
+    <DECORATED>??0frame_callback@rsimpl@@QEAA@PEAUrs_device@@P6AX0PEAUrs_frame_ref@@PEAX@Z2@Z</DECORATED>
+    <FUNCLINE>339</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>341</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback::operator bool</FUNCTION>
+    <DECORATED>??Bframe_callback@rsimpl@@QEAA_NXZ</DECORATED>
+    <FUNCLINE>341</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>351</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback::release' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback::release</FUNCTION>
+    <DECORATED>?release@frame_callback@rsimpl@@UEAAXXZ</DECORATED>
+    <FUNCLINE>351</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>360</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::motion_events_callback::{ctor}</FUNCTION>
+    <DECORATED>??0motion_events_callback@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>360</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>361</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::motion_events_callback::motion_events_callback' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::motion_events_callback::{ctor}</FUNCTION>
+    <DECORATED>??0motion_events_callback@rsimpl@@QEAA@PEAUrs_device@@P6AX0Urs_motion_data@@PEAX@Z2@Z</DECORATED>
+    <FUNCLINE>361</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>363</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::motion_events_callback::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::motion_events_callback::operator bool</FUNCTION>
+    <DECORATED>??Bmotion_events_callback@rsimpl@@QEAA_NXZ</DECORATED>
+    <FUNCLINE>363</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>376</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::motion_events_callback::release' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::motion_events_callback::release</FUNCTION>
+    <DECORATED>?release@motion_events_callback@rsimpl@@UEAAXXZ</DECORATED>
+    <FUNCLINE>376</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>385</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_events_callback::{ctor}</FUNCTION>
+    <DECORATED>??0timestamp_events_callback@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>385</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>386</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::timestamp_events_callback::timestamp_events_callback' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_events_callback::{ctor}</FUNCTION>
+    <DECORATED>??0timestamp_events_callback@rsimpl@@QEAA@PEAUrs_device@@P6AX0Urs_timestamp_data@@PEAX@Z2@Z</DECORATED>
+    <FUNCLINE>386</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>388</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::timestamp_events_callback::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_events_callback::operator bool</FUNCTION>
+    <DECORATED>??Btimestamp_events_callback@rsimpl@@QEAA_NXZ</DECORATED>
+    <FUNCLINE>388</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>398</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::timestamp_events_callback::release' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_events_callback::release</FUNCTION>
+    <DECORATED>?release@timestamp_events_callback@rsimpl@@UEAAXXZ</DECORATED>
+    <FUNCLINE>398</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>406</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::log_callback::{ctor}</FUNCTION>
+    <DECORATED>??0log_callback@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>406</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>407</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::log_callback::log_callback' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::log_callback::{ctor}</FUNCTION>
+    <DECORATED>??0log_callback@rsimpl@@QEAA@P6AXW4rs_log_severity@@PEBDPEAX@Z2@Z</DECORATED>
+    <FUNCLINE>407</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>409</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::log_callback::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::log_callback::operator bool</FUNCTION>
+    <DECORATED>??Blog_callback@rsimpl@@QEAA_NXZ</DECORATED>
+    <FUNCLINE>409</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>411</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'rs_log_severity' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::log_callback::on_event</FUNCTION>
+    <DECORATED>?on_event@log_callback@rsimpl@@UEAAXW4rs_log_severity@@PEBD@Z</DECORATED>
+    <FUNCLINE>411</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>423</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::log_callback::release' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::log_callback::release</FUNCTION>
+    <DECORATED>?release@log_callback@rsimpl@@UEAAXXZ</DECORATED>
+    <FUNCLINE>423</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>433</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::{ctor}</FUNCTION>
+    <DECORATED>??0frame_callback_ptr@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>433</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>434</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback_ptr::frame_callback_ptr' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::{ctor}</FUNCTION>
+    <DECORATED>??0frame_callback_ptr@rsimpl@@QEAA@PEAUrs_frame_callback@@@Z</DECORATED>
+    <FUNCLINE>434</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>436</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::=</FUNCTION>
+    <DECORATED>??4frame_callback_ptr@rsimpl@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>436</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>436</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class rsimpl::frame_callback_ptr', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::=</FUNCTION>
+    <DECORATED>??4frame_callback_ptr@rsimpl@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>436</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>443</LINE>
+      <COLUMN>63</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'release()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::{dtor}</FUNCTION>
+    <DECORATED>??1frame_callback_ptr@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>443</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>444</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback_ptr::operator rs_frame_callback * __ptr64' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::operator struct rs_frame_callback *</FUNCTION>
+    <DECORATED>??Bframe_callback_ptr@rsimpl@@QEAAPEAUrs_frame_callback@@XZ</DECORATED>
+    <FUNCLINE>444</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>445</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_callback_ptr::operator*' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_callback_ptr::*</FUNCTION>
+    <DECORATED>??Dframe_callback_ptr@rsimpl@@QEAAPEAUrs_frame_callback@@XZ</DECORATED>
+    <FUNCLINE>445</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>454</LINE>
+      <COLUMN>59</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_5d09701dcec5e33fa945c2fbd8249e9e&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::device_config::&lt;lambda_5d09701dcec5e33fa945c2fbd8249e9e&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_5d09701dcec5e33fa945c2fbd8249e9e&gt;@@QEBA@PEAUrs_motion_callback@@@Z</DECORATED>
+    <FUNCLINE>454</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>455</LINE>
+      <COLUMN>62</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_d8902ab30df5b44890c9e99af14fde5e&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::device_config::&lt;lambda_d8902ab30df5b44890c9e99af14fde5e&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_d8902ab30df5b44890c9e99af14fde5e&gt;@@QEBA@PEAUrs_timestamp_callback@@@Z</DECORATED>
+    <FUNCLINE>455</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>458</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rsimpl::device_config::requests' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::device_config::{ctor}</FUNCTION>
+    <DECORATED>??0device_config@rsimpl@@QEAA@AEBUstatic_device_info@1@@Z</DECORATED>
+    <FUNCLINE>458</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>rsimpl::device_config::requests</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>477</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::pad_crop_intrinsics' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::pad_crop_intrinsics</FUNCTION>
+    <DECORATED>?pad_crop_intrinsics@rsimpl@@YA?AUrs_intrinsics@@AEBU2@H@Z</DECORATED>
+    <FUNCLINE>477</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>482</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::scale_intrinsics' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::scale_intrinsics</FUNCTION>
+    <DECORATED>?scale_intrinsics@rsimpl@@YA?AUrs_intrinsics@@AEBU2@HH@Z</DECORATED>
+    <FUNCLINE>482</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>484</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::scale_intrinsics</FUNCTION>
+    <DECORATED>?scale_intrinsics@rsimpl@@YA?AUrs_intrinsics@@AEBU2@HH@Z</DECORATED>
+    <FUNCLINE>482</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>484</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::scale_intrinsics</FUNCTION>
+    <DECORATED>?scale_intrinsics@rsimpl@@YA?AUrs_intrinsics@@AEBU2@HH@Z</DECORATED>
+    <FUNCLINE>482</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>488</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::operator==' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::==</FUNCTION>
+    <DECORATED>??8rsimpl@@YA_NAEBUrs_intrinsics@@0@Z</DECORATED>
+    <FUNCLINE>488</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>490</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26497</DEFECTCODE>
+    <DESCRIPTION>The function 'rsimpl::pack' could be marked constexpr if compile-time evaluation is desired (f.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::pack</FUNCTION>
+    <DECORATED>?pack@rsimpl@@YAIEEEE@Z</DECORATED>
+    <FUNCLINE>490</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>490</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::pack' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::pack</FUNCTION>
+    <DECORATED>?pack@rsimpl@@YAIEEEE@Z</DECORATED>
+    <FUNCLINE>490</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>584</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_2e60ad1d32883f929b0858a4c12ad4aa&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::&lt;lambda_2e60ad1d32883f929b0858a4c12ad4aa&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_2e60ad1d32883f929b0858a4c12ad4aa&gt;@@QEBA@XZ</DECORATED>
+    <FUNCLINE>584</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>584</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::{ctor}</FUNCTION>
+    <DECORATED>??0frame_continuation@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>584</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>591</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_d3bc2a4fbf22ff6e96e9af8c673a5d8c&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::{ctor}::&lt;lambda_d3bc2a4fbf22ff6e96e9af8c673a5d8c&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_d3bc2a4fbf22ff6e96e9af8c673a5d8c&gt;@@QEBAXXZ</DECORATED>
+    <FUNCLINE>591</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>589</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::{ctor}</FUNCTION>
+    <DECORATED>??0frame_continuation@rsimpl@@QEAA@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>589</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>598</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_a2873354fd1862fa187220b0c62c9159&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::()::&lt;lambda_a2873354fd1862fa187220b0c62c9159&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_a2873354fd1862fa187220b0c62c9159&gt;@@QEBAXXZ</DECORATED>
+    <FUNCLINE>598</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>605</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_9d90aaead2023f858038cea534b1d1fe&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::reset::&lt;lambda_9d90aaead2023f858038cea534b1d1fe&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_9d90aaead2023f858038cea534b1d1fe&gt;@@QEBAXXZ</DECORATED>
+    <FUNCLINE>605</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>608</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_continuation::get_data' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::get_data</FUNCTION>
+    <DECORATED>?get_data@frame_continuation@rsimpl@@QEBAPEBXXZ</DECORATED>
+    <FUNCLINE>608</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>615</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_213b4394b16688138fca5254f0a2f533&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::=::&lt;lambda_213b4394b16688138fca5254f0a2f533&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_213b4394b16688138fca5254f0a2f533&gt;@@QEBAXXZ</DECORATED>
+    <FUNCLINE>615</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>610</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::=</FUNCTION>
+    <DECORATED>??4frame_continuation@rsimpl@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>610</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>622</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator()()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_continuation::{dtor}</FUNCTION>
+    <DECORATED>??1frame_continuation@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>620</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>645</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function '&lt;lambda_c87cb4b73af6884e4b70439ebdbdfa2b&gt;::operator()' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::check_not_all_zeros::&lt;lambda_c87cb4b73af6884e4b70439ebdbdfa2b&gt;::()</FUNCTION>
+    <DECORATED>??R&lt;lambda_c87cb4b73af6884e4b70439ebdbdfa2b&gt;@@QEBA_NE@Z</DECORATED>
+    <FUNCLINE>645</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26435</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_mode_count' should specify exactly one of 'virtual', 'override', or 'final' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_mode_count</FUNCTION>
+    <DECORATED>?get_mode_count@stream_interface@rsimpl@@UEBAHXZ</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_mode_count' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_mode_count</FUNCTION>
+    <DECORATED>?get_mode_count@stream_interface@rsimpl@@UEBAHXZ</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26435</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_mode' should specify exactly one of 'virtual', 'override', or 'final' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_mode</FUNCTION>
+    <DECORATED>?get_mode@stream_interface@rsimpl@@UEBAXHPEAH0PEAW4rs_format@@0@Z</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26435</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_stream_type' should specify exactly one of 'virtual', 'override', or 'final' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_stream_type</FUNCTION>
+    <DECORATED>?get_stream_type@stream_interface@rsimpl@@UEBA?AW4rs_stream@@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_stream_type' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_stream_type</FUNCTION>
+    <DECORATED>?get_stream_type@stream_interface@rsimpl@@UEBA?AW4rs_stream@@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>114</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_pose</FUNCTION>
+    <DECORATED>?get_pose@native_stream@rsimpl@@UEBA?AUpose@2@XZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::native_stream::get_pose' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_pose</FUNCTION>
+    <DECORATED>?get_pose@native_stream@rsimpl@@UEBA?AUpose@2@XZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>76</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_pose</FUNCTION>
+    <DECORATED>?get_pose@native_stream@rsimpl@@UEBA?AUpose@2@XZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::native_stream::get_depth_scale' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_depth_scale</FUNCTION>
+    <DECORATED>?get_depth_scale@native_stream@rsimpl@@UEBAMXZ</DECORATED>
+    <FUNCLINE>43</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>44</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::native_stream::get_mode_count' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_mode_count</FUNCTION>
+    <DECORATED>?get_mode_count@native_stream@rsimpl@@UEBAHXZ</DECORATED>
+    <FUNCLINE>44</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>44</LINE>
+      <COLUMN>89</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_mode_count</FUNCTION>
+    <DECORATED>?get_mode_count@native_stream@rsimpl@@UEBAHXZ</DECORATED>
+    <FUNCLINE>44</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.h</FILENAME>
+      <LINE>79</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::point_stream::get_format' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::point_stream::get_format</FUNCTION>
+    <DECORATED>?get_format@point_stream@rsimpl@@UEBA?AW4rs_format@@XZ</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>timestamps.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct rsimpl::frame_interface', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_interface::{dtor}</FUNCTION>
+    <DECORATED>??1frame_interface@rsimpl@@UEAA@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>timestamps.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class rsimpl::timestamp_corrector_interface', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_corrector_interface::{dtor}</FUNCTION>
+    <DECORATED>??1timestamp_corrector_interface@rsimpl@@UEAA@XZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>timestamps.h</FILENAME>
+      <LINE>55</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::timestamp_corrector::release' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::timestamp_corrector::release</FUNCTION>
+    <DECORATED>?release@timestamp_corrector@rsimpl@@UEAAXXZ</DECORATED>
+    <FUNCLINE>55</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>38</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_additional_data::{ctor}</FUNCTION>
+    <DECORATED>??0frame_additional_data@frame_archive@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame_additional_data::frame_additional_data' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_additional_data::{ctor}</FUNCTION>
+    <DECORATED>??0frame_additional_data@frame_archive@rsimpl@@QEAA@N_K_JHHHHHHW4rs_format@@W4rs_stream@@HV?$shared_ptr@V?$vector@W4rs_frame_metadata@@V?$allocator@W4rs_frame_metadata@@@std@@@std@@@std@@NN@Z</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>74</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::{ctor}</FUNCTION>
+    <DECORATED>??0frame@frame_archive@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>74</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::{ctor}</FUNCTION>
+    <DECORATED>??0frame@frame_archive@rsimpl@@QEAA@$$QEAU012@@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26456</DEFECTCODE>
+    <DESCRIPTION>Operator 'rsimpl::frame_archive::frame::operator=' hides a non-virtual operator 'rsimpl::frame_interface::operator=' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::=</FUNCTION>
+    <DECORATED>??4frame@frame_archive@rsimpl@@QEAAAEAU012@$$QEAU012@@Z</DECORATED>
+    <FUNCLINE>84</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::=</FUNCTION>
+    <DECORATED>??4frame@frame_archive@rsimpl@@QEAAAEAU012@$$QEAU012@@Z</DECORATED>
+    <FUNCLINE>84</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'reset()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::{dtor}</FUNCTION>
+    <DECORATED>??1frame@frame_archive@rsimpl@@UEAA@XZ</DECORATED>
+    <FUNCLINE>94</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame::set_timestamp' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::set_timestamp</FUNCTION>
+    <DECORATED>?set_timestamp@frame@frame_archive@rsimpl@@UEAAXN@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>103</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame::set_timestamp_domain' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::set_timestamp_domain</FUNCTION>
+    <DECORATED>?set_timestamp_domain@frame@frame_archive@rsimpl@@UEAAXW4rs_timestamp_domain@@@Z</DECORATED>
+    <FUNCLINE>103</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>116</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame::acquire' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::acquire</FUNCTION>
+    <DECORATED>?acquire@frame@frame_archive@rsimpl@@QEAAXXZ</DECORATED>
+    <FUNCLINE>116</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>119</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame::update_owner' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame::update_owner</FUNCTION>
+    <DECORATED>?update_owner@frame@frame_archive@rsimpl@@QEAAXPEAV23@@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>128</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::{ctor}</FUNCTION>
+    <DECORATED>??0frame_ref@frame_archive@rsimpl@@QEAA@XZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>135</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class rsimpl::frame_archive::frame_ref', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::{ctor}</FUNCTION>
+    <DECORATED>??0frame_ref@frame_archive@rsimpl@@QEAA@AEBV012@@Z</DECORATED>
+    <FUNCLINE>135</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>140</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::{ctor}</FUNCTION>
+    <DECORATED>??0frame_ref@frame_archive@rsimpl@@QEAA@$$QEAV012@@Z</DECORATED>
+    <FUNCLINE>140</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>145</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26456</DEFECTCODE>
+    <DESCRIPTION>Operator 'rsimpl::frame_archive::frame_ref::operator=' hides a non-virtual operator 'rs_frame_ref::operator=' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::=</FUNCTION>
+    <DECORATED>??4frame_ref@frame_archive@rsimpl@@QEAAAEAV012@V012@@Z</DECORATED>
+    <FUNCLINE>145</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>153</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'release()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::{dtor}</FUNCTION>
+    <DECORATED>??1frame_ref@frame_archive@rsimpl@@UEAA@XZ</DECORATED>
+    <FUNCLINE>151</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>156</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frame_ref::swap' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frame_ref::swap</FUNCTION>
+    <DECORATED>?swap@frame_ref@frame_archive@rsimpl@@QEAAXAEAV123@@Z</DECORATED>
+    <FUNCLINE>156</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>195</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame</FUNCTION>
+    <DECORATED>?get_frame@frameset@frame_archive@rsimpl@@QEBAPEBUrs_frame_ref@@W4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>193</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>193</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::frameset::get_frame' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame</FUNCTION>
+    <DECORATED>?get_frame@frameset@frame_archive@rsimpl@@QEBAPEBUrs_frame_ref@@W4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>193</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>198</LINE>
+      <COLUMN>118</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_metadata</FUNCTION>
+    <DECORATED>?get_frame_metadata@frameset@frame_archive@rsimpl@@QEBANW4rs_stream@@W4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>198</LINE>
+      <COLUMN>138</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_metadata</FUNCTION>
+    <DECORATED>?get_frame_metadata@frameset@frame_archive@rsimpl@@QEBANW4rs_stream@@W4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>121</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::supports_frame_metadata</FUNCTION>
+    <DECORATED>?supports_frame_metadata@frameset@frame_archive@rsimpl@@QEBA_NW4rs_stream@@W4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>146</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::supports_frame_metadata</FUNCTION>
+    <DECORATED>?supports_frame_metadata@frameset@frame_archive@rsimpl@@QEBA_NW4rs_stream@@W4rs_frame_metadata@@@Z</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>200</LINE>
+      <COLUMN>86</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@frameset@frame_archive@rsimpl@@QEBAPEBEW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>200</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>200</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@frameset@frame_archive@rsimpl@@QEBAPEBEW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>200</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>201</LINE>
+      <COLUMN>85</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_timestamp</FUNCTION>
+    <DECORATED>?get_frame_timestamp@frameset@frame_archive@rsimpl@@QEBANW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>201</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>201</LINE>
+      <COLUMN>106</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_timestamp</FUNCTION>
+    <DECORATED>?get_frame_timestamp@frameset@frame_archive@rsimpl@@QEBANW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>201</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>94</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_number</FUNCTION>
+    <DECORATED>?get_frame_number@frameset@frame_archive@rsimpl@@QEBA_KW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>112</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_number</FUNCTION>
+    <DECORATED>?get_frame_number@frameset@frame_archive@rsimpl@@QEBA_KW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>203</LINE>
+      <COLUMN>90</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_system_time</FUNCTION>
+    <DECORATED>?get_frame_system_time@frameset@frame_archive@rsimpl@@QEBA_JW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>203</LINE>
+      <COLUMN>113</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_system_time</FUNCTION>
+    <DECORATED>?get_frame_system_time@frameset@frame_archive@rsimpl@@QEBA_JW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>204</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_stride</FUNCTION>
+    <DECORATED>?get_frame_stride@frameset@frame_archive@rsimpl@@QEBAHW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>204</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>204</LINE>
+      <COLUMN>97</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_stride</FUNCTION>
+    <DECORATED>?get_frame_stride@frameset@frame_archive@rsimpl@@QEBAHW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>204</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>205</LINE>
+      <COLUMN>76</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_bpp</FUNCTION>
+    <DECORATED>?get_frame_bpp@frameset@frame_archive@rsimpl@@QEBAHW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>205</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>205</LINE>
+      <COLUMN>91</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::get_frame_bpp</FUNCTION>
+    <DECORATED>?get_frame_bpp@frameset@frame_archive@rsimpl@@QEBAHW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>205</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>232</LINE>
+      <COLUMN>76</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::is_stream_enabled</FUNCTION>
+    <DECORATED>?is_stream_enabled@frame_archive@rsimpl@@QEBA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>232</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>232</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::is_stream_enabled' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::is_stream_enabled</FUNCTION>
+    <DECORATED>?is_stream_enabled@frame_archive@rsimpl@@QEBA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>232</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>232</LINE>
+      <COLUMN>57</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::is_stream_enabled</FUNCTION>
+    <DECORATED>?is_stream_enabled@frame_archive@rsimpl@@QEBA_NW4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>232</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>95</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::get_mode</FUNCTION>
+    <DECORATED>?get_mode@frame_archive@rsimpl@@QEBAAEBUsubdevice_mode_selection@2@W4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::frame_archive::get_mode' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::get_mode</FUNCTION>
+    <DECORATED>?get_mode@frame_archive@rsimpl@@QEBAAEBUsubdevice_mode_selection@2@W4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>76</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::get_mode</FUNCTION>
+    <DECORATED>?get_mode@frame_archive@rsimpl@@QEBAAEBUsubdevice_mode_selection@2@W4rs_stream@@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>archive.h</FILENAME>
+      <LINE>260</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class rsimpl::frame_archive', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::{dtor}</FUNCTION>
+    <DECORATED>??1frame_archive@rsimpl@@UEAA@XZ</DECORATED>
+    <FUNCLINE>260</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>sync.h</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26460</DEFECTCODE>
+    <DESCRIPTION>The reference argument 'now_time' for function 'rsimpl::fps_calc::calc_fps' can be marked as const (con.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::fps_calc::calc_fps</FUNCTION>
+    <DECORATED>?calc_fps@fps_calc@rsimpl@@QEAANAEAV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>sync.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>58</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::fps_calc::calc_fps</FUNCTION>
+    <DECORATED>?calc_fps@fps_calc@rsimpl@@QEAANAEAV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>sync.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::fps_calc::calc_fps</FUNCTION>
+    <DECORATED>?calc_fps@fps_calc@rsimpl@@QEAANAEAV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'from' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_extrinsics_to</FUNCTION>
+    <DECORATED>?get_extrinsics_to@stream_interface@rsimpl@@UEBA?AUrs_extrinsics@@AEBUrs_stream_interface@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'to' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_extrinsics_to</FUNCTION>
+    <DECORATED>?get_extrinsics_to@stream_interface@rsimpl@@UEBA?AUrs_extrinsics@@AEBUrs_stream_interface@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26435</DEFECTCODE>
+    <DESCRIPTION>Function 'rsimpl::stream_interface::get_extrinsics_to' should specify exactly one of 'virtual', 'override', or 'final' (c.128).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_extrinsics_to</FUNCTION>
+    <DECORATED>?get_extrinsics_to@stream_interface@rsimpl@@UEBA?AUrs_extrinsics@@AEBUrs_stream_interface@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_extrinsics_to</FUNCTION>
+    <DECORATED>?get_extrinsics_to@stream_interface@rsimpl@@UEBA?AUrs_extrinsics@@AEBUrs_stream_interface@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::stream_interface::get_extrinsics_to</FUNCTION>
+    <DECORATED>?get_extrinsics_to@stream_interface@rsimpl@@UEBA?AUrs_extrinsics@@AEBUrs_stream_interface@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'get_tuple' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::{ctor}</FUNCTION>
+    <DECORATED>??0native_stream@rsimpl@@QEAA@AEAUdevice_config@1@W4rs_stream@@Vcalibration_validator@1@@Z</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>84</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::{ctor}</FUNCTION>
+    <DECORATED>??0native_stream@rsimpl@@QEAA@AEAUdevice_config@1@W4rs_stream@@Vcalibration_validator@1@@Z</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>55</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_mode</FUNCTION>
+    <DECORATED>?get_mode@native_stream@rsimpl@@UEBAXHPEAH0PEAW4rs_format@@0@Z</DECORATED>
+    <FUNCLINE>53</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>64</LINE>
+      <COLUMN>84</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::is_enabled</FUNCTION>
+    <DECORATED>?is_enabled@native_stream@rsimpl@@UEBA_NXZ</DECORATED>
+    <FUNCLINE>62</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>64</LINE>
+      <COLUMN>85</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::is_enabled</FUNCTION>
+    <DECORATED>?is_enabled@native_stream@rsimpl@@UEBA_NXZ</DECORATED>
+    <FUNCLINE>62</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_mode</FUNCTION>
+    <DECORATED>?get_mode@native_stream@rsimpl@@QEBA?AUsubdevice_mode_selection@2@XZ</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_mode</FUNCTION>
+    <DECORATED>?get_mode@native_stream@rsimpl@@QEBA?AUsubdevice_mode_selection@2@XZ</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_rectified_intrinsics</FUNCTION>
+    <DECORATED>?get_rectified_intrinsics@native_stream@rsimpl@@UEBA?AUrs_intrinsics@@XZ</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>141</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::native_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@native_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>137</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>166</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26490</DEFECTCODE>
+    <DESCRIPTION>Don't use reinterpret_cast (type.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::point_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@point_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>158</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>166</LINE>
+      <COLUMN>83</COLUMN>
+    </SFA>
+    <DEFECTCODE>26490</DEFECTCODE>
+    <DESCRIPTION>Don't use reinterpret_cast (type.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::point_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@point_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>158</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>170</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26490</DEFECTCODE>
+    <DESCRIPTION>Don't use reinterpret_cast (type.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::point_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@point_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>158</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>170</LINE>
+      <COLUMN>91</COLUMN>
+    </SFA>
+    <DEFECTCODE>26490</DEFECTCODE>
+    <DESCRIPTION>Don't use reinterpret_cast (type.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::point_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@point_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>158</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::aligned_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@aligned_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>194</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>206</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::aligned_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@aligned_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>194</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::aligned_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@aligned_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>194</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>214</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::aligned_stream::get_frame_data</FUNCTION>
+    <DECORATED>?get_frame_data@aligned_stream@rsimpl@@UEBAPEBEXZ</DECORATED>
+    <FUNCLINE>194</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>539</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>544</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>538</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>539</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>544</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frame_ref,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframe_ref@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframe_ref@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>539</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>544</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>538</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'this-&gt;buffer': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>544</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>rsimpl::small_heap&lt;rsimpl::frame_archive::frameset,240&gt;::deallocate</FUNCTION>
+    <DECORATED>?deallocate@?$small_heap@Vframeset@frame_archive@rsimpl@@$0PA@@rsimpl@@QEAAXPEAVframeset@frame_archive@2@@Z</DECORATED>
+    <FUNCLINE>532</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\third_party\librealsense\src\</FILEPATH>
+      <FILENAME>stream.cpp</FILENAME>
+      <LINE>221</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>rsimpl::frame_archive::frameset::=</FUNCTION>
+    <DECORATED>??4frameset@frame_archive@rsimpl@@QEAAAEAV012@$$QEAV012@@Z</DECORATED>
+    <FUNCLINE>209</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

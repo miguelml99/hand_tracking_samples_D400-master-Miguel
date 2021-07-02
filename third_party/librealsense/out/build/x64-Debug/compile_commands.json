@@ -1,0 +1,197 @@
+[
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\archive.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\archive.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/archive.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\context.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\context.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/context.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\device.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\device.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/device.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\ds-device.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\ds-device.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/ds-device.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\ds-private.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\ds-private.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/ds-private.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\f200.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\f200.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/f200.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\hw-monitor.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\hw-monitor.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/hw-monitor.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\image.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\image.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/image.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\ivcam-private.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\ivcam-private.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/ivcam-private.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\ivcam-device.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\ivcam-device.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/ivcam-device.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\log.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\log.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/log.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\motion-module.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\motion-module.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/motion-module.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\r200.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\r200.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/r200.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\rs.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\rs.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/rs.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\sr300.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\sr300.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/sr300.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\stream.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\stream.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/stream.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\sync.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\sync.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/sync.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\timestamps.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\timestamps.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/timestamps.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\types.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\types.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/types.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\uvc-libuvc.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\uvc-libuvc.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/uvc-libuvc.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\uvc-v4l2.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\uvc-v4l2.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/uvc-v4l2.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\uvc-wmf.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\uvc-wmf.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/uvc-wmf.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\uvc.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\uvc.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/uvc.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\verify.c.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\verify.c\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/verify.c"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -Drealsense_EXPORTS -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\realsense.dir\\src\\zr300.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\src\\zr300.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/src/zr300.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\SR300-live-test.dir\\unit-tests-live.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\SR300-live-test.dir\\unit-tests-live-sr300.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-sr300.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-sr300.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\F200-live-test.dir\\unit-tests-live.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\F200-live-test.dir\\unit-tests-live-f200.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-f200.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-f200.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\offline-test.dir\\unit-tests-offline.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-offline.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-offline.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\LR200-live-test.dir\\unit-tests-live.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\LR200-live-test.dir\\unit-tests-live-ds-common.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-ds-common.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-ds-common.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\LR200-live-test.dir\\unit-tests-live-lr200.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-lr200.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-lr200.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\R200-live-test.dir\\unit-tests-live.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\R200-live-test.dir\\unit-tests-live-ds-common.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-ds-common.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-ds-common.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\R200-live-test.dir\\unit-tests-live-r200.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-r200.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-r200.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\ZR300-live-test.dir\\unit-tests-live.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\ZR300-live-test.dir\\unit-tests-live-ds-common.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-ds-common.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-ds-common.cpp"
+},
+{
+  "directory": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1428~1.299\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRS_USE_WMF_BACKEND -DUNICODE -I..\\..\\..\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Founit-tests\\CMakeFiles\\ZR300-live-test.dir\\unit-tests-live-zr300.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\migue\\Documents\\_TFG\\Visual Studio\\hand_tracking_samples_D400-master\\third_party\\librealsense\\unit-tests\\unit-tests-live-zr300.cpp\"",
+  "file": "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/unit-tests/unit-tests-live-zr300.cpp"
+}
+]

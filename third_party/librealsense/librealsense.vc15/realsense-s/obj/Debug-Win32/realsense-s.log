@@ -1,0 +1,33 @@
+﻿  archive.cpp
+  context.cpp
+  device.cpp
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\src\device.cpp(417,103): warning C4244: 'argument': conversion from 'unsigned __int64' to 'const int', possible loss of data
+  ds-private.cpp
+  ds-device.cpp
+  f200.cpp
+  hw-monitor.cpp
+  image.cpp
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\src\image.cpp(451,9): warning C4068: unknown pragma 'GCC'
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\src\image.cpp(452,9): warning C4068: unknown pragma 'GCC'
+C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\src\image.cpp(482,9): warning C4068: unknown pragma 'GCC'
+  ivcam-device.cpp
+  ivcam-private.cpp
+  log.cpp
+  motion-module.cpp
+  r200.cpp
+  rs.cpp
+  sr300.cpp
+  stream.cpp
+  sync.cpp
+  timestamps.cpp
+  types.cpp
+  uvc-libuvc.cpp
+  Generating Code...
+  Compiling...
+  uvc-v4l2.cpp
+  uvc-wmf.cpp
+  uvc.cpp
+  zr300.cpp
+  Generating Code...
+  verify.c
+  realsense-s.vcxproj -> C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\librealsense\librealsense.vc15\realsense-s\obj\Debug-Win32\realsense-sd.lib

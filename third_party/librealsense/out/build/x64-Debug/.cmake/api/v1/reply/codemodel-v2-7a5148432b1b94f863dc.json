@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "unit-tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "unit-tests",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Realsense",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "RealsenseUnitTests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "F200-live-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-F200-live-test-Debug-aa5732c7fb91b4caa8df.json",
+					"name" : "F200-live-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "LR200-live-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-LR200-live-test-Debug-14675480d44dbd71c176.json",
+					"name" : "LR200-live-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "R200-live-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-R200-live-test-Debug-dc809629b7898d83bd6e.json",
+					"name" : "R200-live-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SR300-live-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-SR300-live-test-Debug-62ebe3bf7d29e14df616.json",
+					"name" : "SR300-live-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZR300-live-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-ZR300-live-test-Debug-cc38419d47c09cf5f22e.json",
+					"name" : "ZR300-live-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "offline-test::@067ae51a6a6b520d70ec",
+					"jsonFile" : "target-offline-test-Debug-973818fe1a296113e3c6.json",
+					"name" : "offline-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense-Debug-7b7292c0363b1041aab6.json",
+					"name" : "realsense",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-60e050d2231ad3d467a4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense/out/build/x64-Debug",
+		"source" : "C:/Users/migue/Documents/_TFG/Visual Studio/hand_tracking_samples_D400-master/third_party/librealsense"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

@@ -1,0 +1,7 @@
+﻿  annotation-fixer.cpp
+  Generating code
+  1 of 5576 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  annotation-fixer-vs2017.vcxproj -> C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master\annotation-fixer\annotation-fixer-vs2017_Release_x64.exe
