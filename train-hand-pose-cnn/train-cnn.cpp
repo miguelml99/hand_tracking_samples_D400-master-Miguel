@@ -74,7 +74,7 @@ int main(int argc, const char **argv) try
 
 	if (!things_yet_to_load.size()) // comprueba si le hemos metido algo antes- Pero si hubiera cnn cargada anteriormente, no podria volverse a entrenar?
 	{
-		things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
+		//things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
 		things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
 		things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_2"); //Miguel: here we write the route of the data we are using to build the cnn
 		things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_0"); //podemos concatenar datasets para el entrenamiento
@@ -109,10 +109,12 @@ int main(int argc, const char **argv) try
 	std::string sixthname = things_yet_to_load.back();
 	things_yet_to_load.pop_back();
 	std::vector<Frame> frames6 = load_dataset(sixthname, (int)htk.handmodel.rigidbodies.size(), compress);
-
+	
+	/*
 	std::string seventhname = things_yet_to_load.back();
 	things_yet_to_load.pop_back();
 	std::vector<Frame> frames7 = load_dataset(seventhname, (int)htk.handmodel.rigidbodies.size(), compress);
+	*/ 
 
 	std::vector<Frame> frames(std::begin(frames1), std::end(frames1));
 	frames.insert(frames.end(), std::begin(frames2), std::end(frames2));
@@ -120,7 +122,7 @@ int main(int argc, const char **argv) try
 	frames.insert(frames.end(), std::begin(frames4), std::end(frames4));
 	frames.insert(frames.end(), std::begin(frames5), std::end(frames5));
 	frames.insert(frames.end(), std::begin(frames6), std::end(frames6));
-	frames.insert(frames.end(), std::begin(frames7), std::end(frames7));
+	//frames.insert(frames.end(), std::begin(frames7), std::end(frames7));
 
 	
 	// have to have at least some data loaded before gui starts
