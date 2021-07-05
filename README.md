@@ -7,4 +7,6 @@ Sin camara se pueden ejecutar:
 
 La CNN que se use en cada momento se puede seleccionar en el archivo "handtrack.m" encontrado en la carpeta include.
 
-la carpeta de  [datasets]() contiene todas las sesiones grabadas hasta el momento. Clasificadas en subcarpetas cada una correspondiente a un gesto. 
+La carpeta de  [datasets]() contiene todas las sesiones grabadas hasta el momento. Clasificadas en subcarpetas cada una correspondiente a un gesto. 
+
+A su vez, la carpeta de [assets]() contiene todos los archivos ".cnnb" correspondientes a las CNNs entrenadas hasta el momento.
