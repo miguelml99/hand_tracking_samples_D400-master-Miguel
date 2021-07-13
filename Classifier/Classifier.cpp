@@ -74,7 +74,20 @@ int main(int argc, char* argv[])
 
     cout << "training started:" << endl;
 
+    GLWin glwin("Gesture recognition system", 500, 400);
 
+    glwin.keyboardfunc = [&](unsigned char key, int x, int y)->void
+    {
+        switch (std::tolower(key))
+        {
+        case 'q': case 27: exit(0); break;  // ESC is already handled in mswin.h MsgProc
+
+        default:
+            std::cout << "unassigned key (" << (int)key << "): '" << key << "'\n";
+            break;
+        }
+      //  currentframe = std::min(std::max(currentframe, 0), (int)frames.size() - 1);
+    };
 
     //LOADING DATASET WITH POSE INFO
 
@@ -101,93 +114,104 @@ int main(int argc, char* argv[])
     bool   trainmode = false;
     int    train_count = 0;      // how many bprop iterations since last save
 
-    currentframe = uniform_rand(0, (int)frames.size() - 1) / 2 * 2; // keep it even so that odd ones can be 'testing set'
+    cout << "Total number of frames in this dataset " << frames.size() << endl;
 
-    auto& frame = frames[currentframe];
-
-    if (currentframe != prevframe)
+    while (glwin.WindowUp())
     {
-        prevframe = currentframe;
-    }
 
-    cout << "Total number of frames in this dataset " << frames.size() << endl ;
+        currentframe = uniform_rand(0, (int)frames.size() - 1) / 2 * 2; // keep it even so that odd ones can be 'testing set'
 
-    vector<float> cnn_input;
+        auto& frame = frames[currentframe];
 
-    for (int i=0; i < (int)frame.pose.size(); i++)
-    {
-        for (int j = 0; j < 3; j++)
+        if (currentframe != prevframe)
         {
-            cnn_input.push_back(frame.pose[i].position[j]);
+            prevframe = currentframe;
         }
 
-        for (int j = 0; j < 4; j++)
+        vector<float> cnn_input;
+
+        for (int i = 0; i < (int)frame.pose.size(); i++)
         {
-            cnn_input.push_back(frame.pose[i].orientation[j]);
+            for (int j = 0; j < 3; j++)
+            {
+                cnn_input.push_back(frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                cnn_input.push_back(frame.pose[i].orientation[j]);
+            }
         }
+        cout << "Number of values in this frame: " << (int)cnn_input.size() << " - Frame sent to the cnn " << currentframe << " - train iterations: " << train_count << " \r";
+
+        /*
+        for (int i = 0; i < (int)cnn_input.size(); i++)
+        {
+            cout << cnn_input[i] << "\t"; // just printing in command window the raw data that will be use to train the network 
+        }
+        */
+
+        std::vector<int> categories(6, 0);
+        std::vector<float> labels;
+        labels = std::vector<float>(categories.size(), 0.0f);
+
+        // First category: Palma con dedos junttos
+        labels[0] = 1.0f;
+
+        cnn.Train(cnn_input, labels, 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
+        train_count++;
+
+        //*******Simpler classification from depth samples ********
+
+        std::default_random_engine rng;
+        //int    training = false; trainmode already defined 
+        int    samplereview = 0;
+        int    currentsample = 0;
+        bool   trainstarted = false;
+        bool   sinusoidal = false;
+        float  time = 0.0f;
+
+        //std::vector<std::vector<float>> samples;
+        //std::vector<std::vector<string>> labels;
+        std::vector<Image<byte3>>       snapshots;
+
+        //std::vector<int> categories(6, 0);
+        float3 catcolors[] = { {0,0,1},{0,1,0},{1,0,0},{1,1,0},{1,0,1},{0,1,1} };
+
+        std::vector<Image<byte3>> icons;
+        for (auto c : categories)
+        {
+            //icons.push_back(sample_cl);  Sustituir por algun dibujo de cada gesto
+        }
+
+        // add training sample (.pose) method from folders
+
+        /*
+        if (icons[c].raster.size() <= 1)icons[c] = sample_cl;
+        snapshots.push_back(sample_cl);
+        categories[c]++;
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[c] = 1.0f;
+        */
+
+        // load all method
+
+        //cnn.loadb("HandGestureRecognition.cnnb");
+
+        // keyboard declaration
+
+        //__rdtsc(); //timestamp de windows
+        glwin.PrintString({ 0,0 }, "Writing trial");
+        glwin.PrintString({ 2,2 }, "Train count:", train_count);
+        //glwin.PrintString({ 2,4 }, train_count);
+        
+        glwin.SwapBuffers();
     }
-    cout << "Number of values in this frame: " << (int)cnn_input.size() << endl;
-    cout << "Raw values of frame " << currentframe << " in the dataset: " << endl;
 
-    for (int i = 0; i < (int)cnn_input.size(); i++)
-    { 
-        cout << cnn_input[i] << "\t"; // just printing in command window the raw data that will be use to train the network 
-    }
-
-    std::vector<int> categories(6, 0);
-    std::vector<float> labels;
-    labels = std::vector<float>(categories.size(), 0.0f);
-
-    // First category:
-    labels[0] = 1.0f;
-    
-    cnn.Train(cnn_input, labels, 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
-    train_count++;
-
-    //*******Simpler classification from depth samples ********
-
-    std::default_random_engine rng;
-    //int    training = false; trainmode already defined 
-    int    samplereview = 0;
-    int    currentsample = 0;
-    bool   trainstarted = false;
-    bool   sinusoidal = false;
-    float  time = 0.0f;
-
-    std::vector<std::vector<float>> samples;
-    //std::vector<std::vector<string>> labels;
-    std::vector<Image<byte3>>       snapshots;
-
-    //std::vector<int> categories(6, 0);
-    float3 catcolors[] = { {0,0,1},{0,1,0},{1,0,0},{1,1,0},{1,0,1},{0,1,1} };
-
-    std::vector<Image<byte3>> icons;
-    for (auto c : categories)
-    {
-        //icons.push_back(sample_cl);  Sustituir por algun dibujo de cada gesto
-    }
-
-    // add training sample (.pose) method from folders
-
-    /*
-    if (icons[c].raster.size() <= 1)icons[c] = sample_cl;
-    snapshots.push_back(sample_cl);
-    categories[c]++;
-    samples.push_back(sample_in);
-    labels.push_back(std::vector<float>(categories.size(), 0.0f));
-    labels.back()[c] = 1.0f;
-    */ 
-
-    // load all method
-
+    //cout << " saving cnn " << endl;
     //save all method
-
-    float sint = 0.0f;
-
-
-    // keyboard declaration
-
-    //__rdtsc(); //timestamp de windows
+    cnn.saveb("HandGestureRecognition.cnnb");
 
     return 0;
 }
