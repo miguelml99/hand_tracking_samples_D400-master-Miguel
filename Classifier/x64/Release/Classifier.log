@@ -8,9 +8,9 @@ C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking
 C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\include\extra\tcpsocket.h(201,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\include\extra\tcpsocket.h(203,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Generating code
-  1 of 6812 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  1 of 6818 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Classifier.vcxproj -> C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\Classifier\Classifier_Release_x64.exe
   Copy Intel RealSense SDK 2.0 shared module next to the application
