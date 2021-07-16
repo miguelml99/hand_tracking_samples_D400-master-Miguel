@@ -48,6 +48,20 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
     frame.depth = segment;
 }
 
+CNN baby_gestures_cnn()
+{
+    CNN cnn({});
+    cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
+    cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
+    cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(32));
+    cnn.layers.push_back(new CNN::LFull(32, 6));
+    cnn.layers.push_back(new CNN::LSoftMax(6));
+    cnn.Init(); // initializes weights
+    return cnn;
+}
+
 CNN gestures_cnn()  // probably too big to learn quickly with small ground truth sample size
 {
     CNN cnn({});
@@ -70,7 +84,7 @@ CNN gestures_cnn()  // probably too big to learn quickly with small ground truth
 
 int main(int argc, char* argv[]) 
 {
-    CNN cnn = gestures_cnn(); 
+    CNN cnn = baby_gestures_cnn(); 
 
     //cnn.loadb("../Classifier/HandGestureRecognition.cnnb"); //load CNN that is going to be used at first
 
@@ -86,8 +100,9 @@ int main(int argc, char* argv[])
     {                               
         //things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
        
-        things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_0"); //podemos concatenar datasets para el entrenamiento
-        things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
+        things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_1"); //podemos concatenar datasets para el entrenamiento
+        things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
+       // things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
     }
 
     std::string firstname = things_yet_to_load.back();
@@ -117,12 +132,13 @@ int main(int argc, char* argv[])
     bool   trainmode = false;
     int    train_count = 0;      // how many bprop iterations since last save 
 
-    cout << "Total number of frames in this dataset " << frames.size() << endl;
+    cout << "Total number of frames loaded " << frames.size() + frames2.size() << endl;
 
     //*******Simpler classification from depth samples  ********
 
     int frame2 = 0;
     std::vector<float> errorhistory(128, 1.0f);
+    std::vector<float> errorhistory2;
 
     std::default_random_engine rng;
     //int    training = false;//trainmode already defined 
@@ -157,6 +173,7 @@ int main(int argc, char* argv[])
             }
         }
 
+        sample_in.push_back(0);
         samples2.push_back(sample_in);
         labels2.push_back(std::vector<float>(categories.size(), 0.0f));
         labels2.back()[0] = 1.0f; // 0 is the number of the category or output node
@@ -180,11 +197,18 @@ int main(int argc, char* argv[])
                 sample_in.push_back(frame2.pose[i].orientation[j]);
             }
         }
+        sample_in.push_back(0);
 
         samples2.push_back(sample_in);
         labels2.push_back(std::vector<float>(categories.size(), 0.0f));
-        labels2.back()[1] = 1.0f; // 1 is the number of the category or output node
+        labels2.back()[1] = 1.0f; // 1 is the number of the corresponding category or output node
         sample_in = vector<float>();
+    }
+
+  // for (int i = 0; i < (int)samples2[361].size(); i++)
+    {
+      //  cout << samples2[361][i] << "\t"; // just printing in command window the raw data that will be use to train the network 
+      
     }
 
     //Keys implementation
@@ -193,8 +217,9 @@ int main(int argc, char* argv[])
         switch (std::tolower(key))
         {
         case 'q': case 27: exit(0); break;  // ESC is already handled in mswin.h MsgProc
-        case 's': std::cout << "saving cnn..."; cnn.saveb("HandGestureRecognition.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
-        case 't': if (key == 'T') trainmode++; else trainmode = (!trainmode) * 5; break; // t toggles while shift-T will continue to increas amount of backprop iterations per frame
+        case 's': std::cout << "saving cnn..."; cnn.saveb("HandGestureRecognition0.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
+        //case 't': if (key == 'T') trainmode++; else trainmode = (!trainmode) * 5; break; // t toggles while shift-T will continue to increas amount of backprop iterations per frame
+        case 't': trainmode = !trainmode; break;
         default:
             std::cout << "unassigned key (" << (int)key << "): '" << key << "'\n";
             break;
@@ -210,16 +235,17 @@ int main(int argc, char* argv[])
 
         // *******TRAINING BASED ON: Train Hand tracking samples ********
 
-        currentframe = uniform_rand(0, (int)frames.size() - 1) / 2 * 2; // keep it even so that odd ones can be 'testing set'
+        if (trainmode) { currentframe = uniform_rand(0, (int)samples2.size() - 1) / 2 * 2; }// keep it even so that odd ones can be 'testing set'
 
         while (currentframe == prevframe)
         {
-            currentframe = uniform_rand(0, (int)frames.size() - 1) / 2 * 2;        
+            currentframe = uniform_rand(0, (int)samples2.size() - 1) / 2 * 2;        
         }
 
+        
         auto& frame = frames[currentframe];
         prevframe = currentframe;
-
+        /*
         vector<float> cnn_input;
 
         for (int i = 0; i < (int)frame.pose.size(); i++)
@@ -234,31 +260,36 @@ int main(int argc, char* argv[])
                 cnn_input.push_back(frame.pose[i].orientation[j]);
             }
         }
-       // cout << "Number of values in this frame: " << (int)cnn_input.size() << " - Frame sent to the cnn " << currentframe << " - train iterations: " << train_count << " \r";
-
-        /*
-        for (int i = 0; i < (int)cnn_input.size(); i++)
-        {
-            cout << cnn_input[i] << "\t"; // just printing in command window the raw data that will be use to train the network 
-        }
         */
+        //cout << "Number of values in this frame: " << (int)samples2[currentframe].size() << " - Frame sent to the cnn " << currentframe << " - train iterations: " << train_count << " \r";
 
-        // First category: Palma con dedos junttos
-        labels[0] = 1.0f;
-
-        //cnn.Train(cnn_input, labels, 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
+        //cout << currentframe << "\t";
+        //for (int i = 0; i < (int)labels2[currentframe].size(); i++)
+        {
+            //cout << samples2[currentframe][i] << "\t"; // just printing in command window the raw data that will be use to train the network 
+            //cout << labels2[currentframe][i] << "\t";
+        }
+        //cout << endl << endl;
+        float mse = 0.0f;
         
-
+        if (trainmode)
+        {
+            mse = cnn.Train(samples2[currentframe], labels2[currentframe], 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
+            train_count++;
+            cout << " Mean square error:  " << mse << "- square root of mse: " << sqrt(mse) << "\n";
+        }
+        
+        /*
         //*******TRAINING BASED ON: Simpler classification from depth samples ********
 
         // TRAINING 2.0
-        float mse = 0.0f;
+        
         //for (int i = 0; i < train_count && samples2.size() != 0; i++)  // why do we use this ??
         {
             trainstarted = true;
-            auto s = std::uniform_int<int>(0, (int)samples2.size() - 1)(rng); // does this random generator discard odd numbers?
+            //auto s = std::uniform_int<int>(0, (int)samples2.size() - 1)(rng); // does this random generator discard odd numbers?
             //uniform int produces integer values according to a uniform discrete distribution
-            //auto s = uniform_rand(0, (int)frames.size() - 1) / 2 * 2; // keep it even so that odd ones can be 'testing set'
+            auto s = uniform_rand(0, (int)frames.size() - 1) / 2 * 2; // keep it even so that odd ones can be 'testing set'
             mse = cnn.Train(samples2[s], labels2[s], 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
             //mse = train_count ? mse / (float)train_count : 0;
             //cout << "Number of values in this frame/sample: " << samples2[s].size() << " - Frame sent to the cnn " << s << " - train iterations: " << train_count << "  \r";
@@ -282,10 +313,11 @@ int main(int argc, char* argv[])
        // int best = std::max_element(cnn_out.begin(), cnn_out.end()) - cnn_out.begin();
 
        // int category = std::max_element(labels2[random].begin(), labels2[random].end()) - labels2[random].begin();
-
+       */
         glwin.PrintString({ 1, 2 }, "mse: %5.2f", mse);
         glwin.PrintString({ 1, 4 }, "error: %5.2f", sqrt(mse));
         glwin.PrintString({ 0, 8 }, "Train count: %5.2f", train_count);
+        
 
         //glwin.PrintString({ 1, 6 }, "Frame number analized: %5.2f", random);
 
@@ -314,6 +346,7 @@ int main(int argc, char* argv[])
         // keyboard declaration
         int panelx = 0, panelw = glwin.res.x - 100 * 2;
 
+        WidgetSwitch({ panelx + 2  , glwin.res.y - 60 + 1 }, { panelw - 5 - 100 , 25 - 2 }, glwin, trainmode, "[t] backprop train").Draw();
         WidgetButton({ panelx + 10  , glwin.res.y - 90 + 1 }, { panelw / 2 - 20   , 25 - 2 }, glwin, "[^t] save CNN ", [&]() { glwin.keyboardfunc('s', 0, 0);}, train_count > 1000).Draw();
         
         /* Graphical user Interface
@@ -331,6 +364,7 @@ int main(int argc, char* argv[])
         */
        
         glwin.SwapBuffers();
+        
     }
 
     return 0;

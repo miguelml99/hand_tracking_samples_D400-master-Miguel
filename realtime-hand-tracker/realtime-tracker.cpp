@@ -35,12 +35,33 @@
 #pragma message ("ATTENTION:  Switch To RELEASE Mode!!   Debug is really slow!!")
 #endif
 
+using namespace std;
+
+CNN baby_gestures_cnn()
+{
+	CNN cnn({});
+	cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
+	cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
+	cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
+	cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
+	cnn.layers.push_back(new CNN::LActivation<TanH>(32));
+	cnn.layers.push_back(new CNN::LFull(32, 6));
+	cnn.layers.push_back(new CNN::LSoftMax(6));
+	cnn.Init(); // initializes weights
+	return cnn;
+}
+
 int main(int argc, char *argv[]) try
 {
-
 	GLWin glwin("htk - testing hand tracking system  using realsense depth camera input",640,360); // Set to a smaller window size 1280 720
 	RSCam dcam; // declaration of the realsense camera 
 	bool useLeft = false; // Added condition for left hand
+
+	//CLASSIFIER:
+	CNN cnn2 = baby_gestures_cnn();
+	cnn2.loadb("../Classifier/HandGestureRecognition0.cnnb"); //load CNN that is going to be used at first
+	vector<float> cnn_input;
+
 	if (argc == 3)
 	{
 		dcam.Init(argc==2?argv[1]:""); // Second param is the location of the file
@@ -64,6 +85,7 @@ int main(int argc, char *argv[]) try
 	}
 	HandTracker htk(useLeft);
 	htk.always_take_cnn = false;  // when false the system will just use frame-to-frame when cnn result is not more accurate
+	
 	glwin.keyboardfunc = [&](int key, int, int)
 	{
 		switch (std::tolower(key))
@@ -78,7 +100,11 @@ int main(int argc, char *argv[]) try
 	};
 	htk.load_config( "../config.json");
 
+	std::cout << htk.handmodel.rigidbodies.size() << std::endl;
+
 	std::cout << "Valores angulo de cada dedo en salida CNN  0 is open, 3.14 (180 degrees) is clenched." << std::endl;
+
+	std::cout << "Valores angulos de euler de la muñeca respecto al ordenador: Wristroll, pitch , tilt (yaw) y el angulo del primer dedo con respecto a la palma" << std::endl;
 
 	while (glwin.WindowUp())
 	{
@@ -96,6 +122,41 @@ int main(int argc, char *argv[]) try
 
 		htk.update(std::move(dimage));   // update the hand tracking with the current depth camera input
 										 // Constructores "move" son usados en lugar de copy constructors en c++
+
+		//CLASSIFIER:
+
+		for (int i = 0; i < htk.handmodel.GetPose().size(); i++)
+		{
+			for (int j = 0; j < 3; j++)
+			{
+				cnn_input.push_back(htk.handmodel.GetPose()[i].position[j]);
+			}
+
+			for (int j = 0; j < 4; j++)
+			{
+				cnn_input.push_back(htk.handmodel.GetPose()[i].orientation[j]);
+			}
+			cnn_input.push_back(0);
+		}
+
+		auto cnn_out = cnn2.Eval(cnn_input);
+		// __int64 cycles_fprop = __rdtsc() - timestart;
+
+		cnn_input = vector<float>();
+
+		int best = std::max_element(cnn_out.begin(), cnn_out.end()) - cnn_out.begin();
+		//int category = std::max_element(labels2[sample_frame].begin(), labels2[sample_frame].end()) - labels2[sample_frame].begin();
+
+
+		//std::cout << htk.handmodel.GetPose()[0].position << htk.handmodel.GetPose()[0].orientation;
+
+		for (int i = 0; i < 6; i++)
+		{
+			cout << setprecision(3) << cnn_out[i] << "\t";
+		}
+		cout << " //  Predicted category: " << best << "\r";
+
+		// OPEN GL :
 
 		glPushAttrib(GL_ALL_ATTRIB_BITS);
 		glViewport(0, 0, glwin.res.x, glwin.res.y);
@@ -123,6 +184,7 @@ int main(int argc, char *argv[]) try
 		glwin.PrintString({2+ 220 / glwin.font_char_dims.x,4 }, "%s   ('a' to toggle)", htk.angles_only ? "not using depth, just cnn angles" : "using depth for final fit");
 		glwin.PrintString({2+ 220 / glwin.font_char_dims.x,6 }, "hand size  %f cm   (use +/- to scale)", segment_scale);
 
+		/*
 		//if ( htk.cnn_output_analysis.wristroll > 5.00 || htk.cnn_output_analysis.finger_clenched[0] < 2.00 )  wristroll falla mucho
 		if ( htk.cnn_output_analysis.finger_clenched[0] < 2.00)
 		{
@@ -131,7 +193,7 @@ int main(int argc, char *argv[]) try
 		else {
 			glwin.PrintString({ 2 + 120 / glwin.font_char_dims.x,10 }, "POSE: FIST CLOSED ");
 		}
-
+		*/
 
 		glPopAttrib();
 		glwin.SwapBuffers();
@@ -158,9 +220,12 @@ int main(int argc, char *argv[]) try
 		//std::cout << std::setprecision(3) << htk.cnn_output_analysis.palmq;
 		*/
 
-		std::cout << std::setprecision(3) << htk.cnn_output_analysis.wristroll << "\t dedo 1:\t" << htk.cnn_output_analysis.finger_clenched[0]; //<< "\t" << htk.cnn_output_analysis.pitch << "\t" << htk.cnn_output_analysis.tilt
+		//std::cout << std::setprecision(3) << htk.cnn_output_analysis.wristroll << "\t" << htk.cnn_output_analysis.pitch << "\t" << htk.cnn_output_analysis.tilt << "\t dedo 1:\t" << htk.cnn_output_analysis.finger_clenched[0]; //<< "\t" << htk.cnn_output_analysis.pitch << "\t" << htk.cnn_output_analysis.tilt
+
+		//std::cout << htk.handmodel.GetPose()[0].position << htk.handmodel.GetPose()[0].orientation;
 
 
+		
 		//std::cout << htk.cnn_output.size(); son 2000 y pico valores
 
 		//std::cout << std::setprecision(3) << "\t" << htk.pose_estimator.get().pose[1].position << "\t" << htk.pose_estimator.get().pose[0].position;
@@ -169,7 +234,7 @@ int main(int argc, char *argv[]) try
 			//std::cout << std::setprecision(2) << "\t" << htk.handmodel.GetPose()[0].orientation ; //<< "\t" << htk.handmodel.GetPose()[4].position << "\t" << htk.handmodel.GetPose()[10].position ;
 		}
 
-		std::cout << "\r"; //std::endl << std::endl;
+
 		//std::cout << "numero de joints: " << htk.handmodel.joints.size() << std::endl << std::endl; //son 16
 
 		/* 

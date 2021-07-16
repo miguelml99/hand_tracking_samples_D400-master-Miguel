@@ -48,6 +48,20 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
     frame.depth = segment;
 }
 
+CNN baby_gestures_cnn()
+{
+    CNN cnn({});
+    cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
+    cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
+    cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(32));
+    cnn.layers.push_back(new CNN::LFull(32, 6));
+    cnn.layers.push_back(new CNN::LSoftMax(6));
+    cnn.Init(); // initializes weights
+    return cnn;
+}
+/*
 CNN gestures_cnn()  // probably too big to learn quickly with small ground truth sample size
 {
     CNN cnn({});
@@ -67,12 +81,12 @@ CNN gestures_cnn()  // probably too big to learn quickly with small ground truth
     cnn.Init();
     return cnn;
 }
-
+*/
 int main(int argc, char* argv[]) 
 {
-    CNN cnn = gestures_cnn(); 
+    CNN cnn2 = baby_gestures_cnn(); 
 
-    cnn.loadb("../Classifier/HandGestureRecognition2.cnnb"); //load CNN that is going to be used at first
+    cnn2.loadb("../Classifier/HandGestureRecognition0.cnnb"); //load CNN that is going to be used at first
 
     //LOADING DATASET WITH POSE INFO
 
@@ -82,8 +96,8 @@ int main(int argc, char* argv[])
     {                               
         //things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
        
-        things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_1"); //podemos concatenar datasets para el entrenamiento
-        things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
+        things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_0"); //podemos concatenar datasets para el entrenamiento
+        things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
        // things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
     }
 
@@ -102,9 +116,7 @@ int main(int argc, char* argv[])
 
 
     //**********hand tracking system training: *********
-    std::vector<int> categories(6, 0);
-    std::vector<float> labels;
-    labels = std::vector<float>(categories.size(), 0.0f);
+
 
     int currentframe = 0;
     int prevframe = -1;
@@ -113,18 +125,10 @@ int main(int argc, char* argv[])
 
     //*******Simpler classification from depth samples  ********
 
-    int frame2 = 0;
     std::vector<float> errorhistory(128, 1.0f);
     std::vector<float> errorhistory2;
 
-    std::default_random_engine rng;
-    //int    training = false;//trainmode already defined 
-    int    samplereview = 0;
-    int    currentsample2 = 0;
-    bool   trainstarted = false;
-    bool   sinusoidal = false;
-    float  time = 0.0f;
-    //std::vector<int> categories(6, 0);
+    std::vector<int> categories(6, 0);
     float3 catcolors[] = { {0,0,1},{0,1,0},{1,0,0},{1,1,0},{1,0,1},{0,1,1} };
 
     // Second training trial 
@@ -149,7 +153,7 @@ int main(int argc, char* argv[])
                 sample_in.push_back(frame2.pose[i].orientation[j]);
             }
         }
-
+        sample_in.push_back(0);
         samples2.push_back(sample_in);
         labels2.push_back(std::vector<float>(categories.size(), 0.0f));
         labels2.back()[0] = 1.0f; // 0 is the number of the category or output node
@@ -173,52 +177,38 @@ int main(int argc, char* argv[])
                 sample_in.push_back(frame2.pose[i].orientation[j]);
             }
         }
-
+        sample_in.push_back(0);
         samples2.push_back(sample_in);
         labels2.push_back(std::vector<float>(categories.size(), 0.0f));
         labels2.back()[1] = 1.0f; // 1 is the number of the category or output node
         sample_in = vector<float>();
     }
 
-    void* current_selection = NULL;
-    auto random = 50; // this is the index of the frame that is going to be sent into the cnn after training 
 
    // while (glwin.WindowUp())
     {
-       // cout << "Number of values in this frame: " << (int)samples2[currentframe].size() << " - Frame sent to the cnn " << currentframe << " - train iterations: " << train_count << " \r";
-        //cout << currentframe << "\t";
-        //for (int i = 0; i < (int)labels2[currentframe].size(); i++)
-        {
-            //cout << samples2[currentframe][i] << "\t"; // just printing in command window the raw data that will be use to train the network 
-            //cout << labels2[currentframe][i] << "\t";
+
+        // CNN Result:     
+
+        int sample_frame = 1;
+
+        while (sample_frame < samples2.size())
+        {         
+            auto cnn_out = cnn2.Eval(samples2[sample_frame]);
+            // __int64 cycles_fprop = __rdtsc() - timestart;
+
+            int best = std::max_element(cnn_out.begin(), cnn_out.end()) - cnn_out.begin();
+            int category = std::max_element(labels2[sample_frame].begin(), labels2[sample_frame].end()) - labels2[sample_frame].begin();
+
+            for (int i = 0; i < 6; i++)
+            {
+                cout << cnn_out[i] << "\t";
+            }
+            cout << endl << "Frame number: " << sample_frame << "  //  Predicted category: " << best << " // Corresponding category: " << category << endl << endl;
+            sample_frame += 50;
         }
-        //cout << endl << endl;
 
-        // CNN Result: 
-        
-        random += 21;
-        if (random > samples2.size()) 
-        {
-            random = 0;
-        }
-        auto cnn_out = cnn.Eval(samples2[random]); 
-       // __int64 cycles_fprop = __rdtsc() - timestart;
-        int best = std::max_element(cnn_out.begin(), cnn_out.end()) - cnn_out.begin();
-
-
-
-       // int category = std::max_element(labels2[random].begin(), labels2[random].end()) - labels2[random].begin();
-
-        
-        
-        
-        for (int i =0; i<6; i++)
-        {
-            cout << cnn_out[i] << "\t";
-            
-        }
-        
-        cout << endl;
+    
         //glwin.PrintString({ 1,8 }, (category == best) ? "Success, CNN output matches this category" : "Fail, sample miscategorized");
 
         

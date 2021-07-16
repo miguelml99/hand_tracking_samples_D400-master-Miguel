@@ -7,7 +7,8 @@ C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking
 C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\include\extra\tcpsocket.h(204,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\include\extra\tcpsocket.h(201,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\include\extra\tcpsocket.h(203,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\Real-time classifier\Realtime-classifier.cpp(206,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\Real-time classifier\Realtime-classifier.cpp(208,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\migue\Documents\_TFG\_HAND_TRACKING_SAMPLES_D400 ORIGINAL\hand_tracking_samples_D400-master-Miguel\Real-time classifier\Realtime-classifier.cpp(209,26): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
   Generating code
   1 of 6585 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
