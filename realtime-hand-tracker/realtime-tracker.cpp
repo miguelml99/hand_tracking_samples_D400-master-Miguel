@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) try
 
 	//CLASSIFIER:
 	CNN cnn2 = baby_gestures_cnn();
-	cnn2.loadb("../Classifier/HandGestureRecognition0.cnnb"); //load CNN that is going to be used at first
+	cnn2.loadb("../Train-Classifier/HandGestureRecognition_013cat.cnnb"); //load CNN that is going to be used at first
 	vector<float> cnn_input;
 
 	if (argc == 3)
@@ -102,9 +102,9 @@ int main(int argc, char *argv[]) try
 
 	std::cout << htk.handmodel.rigidbodies.size() << std::endl;
 
-	std::cout << "Valores angulo de cada dedo en salida CNN  0 is open, 3.14 (180 degrees) is clenched." << std::endl;
+	//std::cout << "Valores angulo de cada dedo en salida CNN  0 is open, 3.14 (180 degrees) is clenched." << std::endl;
 
-	std::cout << "Valores angulos de euler de la muñeca respecto al ordenador: Wristroll, pitch , tilt (yaw) y el angulo del primer dedo con respecto a la palma" << std::endl;
+	//std::cout << "Valores angulos de euler de la muñeca respecto al ordenador: Wristroll, pitch , tilt (yaw) y el angulo del primer dedo con respecto a la palma" << std::endl;
 
 	while (glwin.WindowUp())
 	{
@@ -149,8 +149,8 @@ int main(int argc, char *argv[]) try
 
 
 		//std::cout << htk.handmodel.GetPose()[0].position << htk.handmodel.GetPose()[0].orientation;
-
-		for (int i = 0; i < 6; i++)
+		cout << " CNN output:\t";
+		for (int i = 0; i < (int)cnn_out.size(); i++)
 		{
 			cout << setprecision(3) << cnn_out[i] << "\t";
 		}
