@@ -40,7 +40,7 @@ using namespace std;
 CNN baby_gestures_cnn()
 {
 	CNN cnn({});
-	cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
+	cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 3, 3, 1, 16 }, { 8, 6, 16 }));
 	cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
 	cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
 	cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) try
 
 	//CLASSIFIER:
 	CNN cnn2 = baby_gestures_cnn();
-	cnn2.loadb("../Train-Classifier/HandGestureRecognition_013cat.cnnb"); //load CNN that is going to be used at first
+	cnn2.loadb("../Train-Classifier/HandGestureRecognition_012_3x3.cnnb"); //load CNN that is going to be used at first
 	vector<float> cnn_input;
 
 	if (argc == 3)
