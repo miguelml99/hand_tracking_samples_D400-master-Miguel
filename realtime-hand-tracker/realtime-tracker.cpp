@@ -40,7 +40,20 @@ using namespace std;
 CNN baby_gestures_cnn()
 {
 	CNN cnn({});
-	cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 3, 3, 1, 16 }, { 8, 6, 16 }));
+	//cnn.layers.push_back(new CNN::LFull(120, 128));
+	//cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+
+	cnn.layers.push_back(new CNN::LFull(120, 32));
+	cnn.layers.push_back(new CNN::LActivation<TanH>(32));
+	cnn.layers.push_back(new CNN::LFull(32, 6));
+	cnn.layers.push_back(new CNN::LSoftMax(6));
+	cnn.Init(); // initializes weights
+	return cnn;
+}
+/*CNN baby_gestures_cnn()
+{
+	CNN cnn({});
+	cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
 	cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
 	cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
 	cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
@@ -49,7 +62,7 @@ CNN baby_gestures_cnn()
 	cnn.layers.push_back(new CNN::LSoftMax(6));
 	cnn.Init(); // initializes weights
 	return cnn;
-}
+}*/
 
 int main(int argc, char *argv[]) try
 {
@@ -59,7 +72,7 @@ int main(int argc, char *argv[]) try
 
 	//CLASSIFIER:
 	CNN cnn2 = baby_gestures_cnn();
-	cnn2.loadb("../Train-Classifier/HandGestureRecognition_012_3x3.cnnb"); //load CNN that is going to be used at first
+	cnn2.loadb("../Train-Classifier/HGR_0123(5)cat_2layers.cnnb"); //load CNN that is going to be used at first
 	vector<float> cnn_input;
 
 	if (argc == 3)
@@ -123,7 +136,7 @@ int main(int argc, char *argv[]) try
 		htk.update(std::move(dimage));   // update the hand tracking with the current depth camera input
 										 // Constructores "move" son usados en lugar de copy constructors en c++
 
-		//CLASSIFIER:
+		//******************************CLASSIFIER: ******************************************
 
 		for (int i = 0; i < htk.handmodel.GetPose().size(); i++)
 		{
@@ -154,9 +167,9 @@ int main(int argc, char *argv[]) try
 		{
 			cout << setprecision(3) << cnn_out[i] << "\t";
 		}
-		cout << " //  Predicted category: " << best << "\r";
+		cout << " //\tPredicted category:\t" << best << "\r";
 
-		// OPEN GL :
+		// *****************OPEN GL : ************
 
 		glPushAttrib(GL_ALL_ATTRIB_BITS);
 		glViewport(0, 0, glwin.res.x, glwin.res.y);
@@ -184,80 +197,9 @@ int main(int argc, char *argv[]) try
 		glwin.PrintString({2+ 220 / glwin.font_char_dims.x,4 }, "%s   ('a' to toggle)", htk.angles_only ? "not using depth, just cnn angles" : "using depth for final fit");
 		glwin.PrintString({2+ 220 / glwin.font_char_dims.x,6 }, "hand size  %f cm   (use +/- to scale)", segment_scale);
 
-		/*
-		//if ( htk.cnn_output_analysis.wristroll > 5.00 || htk.cnn_output_analysis.finger_clenched[0] < 2.00 )  wristroll falla mucho
-		if ( htk.cnn_output_analysis.finger_clenched[0] < 2.00)
-		{
-			glwin.PrintString({ 2 + 120 / glwin.font_char_dims.x,10 }, "POSE: HAND OPENNED ");
-		}
-		else {
-			glwin.PrintString({ 2 + 120 / glwin.font_char_dims.x,10 }, "POSE: FIST CLOSED ");
-		}
-		*/
-
 		glPopAttrib();
 		glwin.SwapBuffers();
 		
-		//std::cout << "Dimensiones entrada" << htk.cnn_input.dim() << std::endl; //son 64*64
-
-		//std::cout << "|| Fingers:\t";
-
-		/*
-		for (int i = 0; i < htk.cnn_output_analysis.finger_clenched.size(); i++)
-		{
-			std::cout << std::setprecision(3) <<  htk.cnn_output_analysis.finger_clenched[i] << "\t";
-		}
-		
-		//std::cout << "|| heatmap peaks \t";
-		
-		for (int i = 0; i < htk.cnn_output_analysis.crays.size(); i++)
-		{
-			std::cout << std::setprecision(3) << htk.cnn_output_analysis.crays[i] << "\t";
-		}	
-		
-		//std::cout << "|| Palm orientation\t";
-
-		//std::cout << std::setprecision(3) << htk.cnn_output_analysis.palmq;
-		*/
-
-		//std::cout << std::setprecision(3) << htk.cnn_output_analysis.wristroll << "\t" << htk.cnn_output_analysis.pitch << "\t" << htk.cnn_output_analysis.tilt << "\t dedo 1:\t" << htk.cnn_output_analysis.finger_clenched[0]; //<< "\t" << htk.cnn_output_analysis.pitch << "\t" << htk.cnn_output_analysis.tilt
-
-		//std::cout << htk.handmodel.GetPose()[0].position << htk.handmodel.GetPose()[0].orientation;
-
-
-		
-		//std::cout << htk.cnn_output.size(); son 2000 y pico valores
-
-		//std::cout << std::setprecision(3) << "\t" << htk.pose_estimator.get().pose[1].position << "\t" << htk.pose_estimator.get().pose[0].position;
-		
-		{
-			//std::cout << std::setprecision(2) << "\t" << htk.handmodel.GetPose()[0].orientation ; //<< "\t" << htk.handmodel.GetPose()[4].position << "\t" << htk.handmodel.GetPose()[10].position ;
-		}
-
-
-		//std::cout << "numero de joints: " << htk.handmodel.joints.size() << std::endl << std::endl; //son 16
-
-		/* 
-		* for (int i = 0; i < htk.cnn_output.size(); i++)
-		{
-			std::cout << htk.cnn_output[i] << "\t"; 
-		}	
-		CNN cnn;
-		Image<float>       cnn_input;
-		std::vector<float> cnn_output;
-		CNNOutputAnalysis  cnn_output_analysis;
-		std::future< tracking_with_cnn_results > pose_estimator;
-		PhysModel handmodel;
-		PhysModel othermodel;
-		*/
-		//       main(){ ...
-//          HandTracker my_hand_tracker;
-//          while() // main loop
-//             ...
-//             my_hand_tracker.update(my_depth_data_from_some_camera);
-//             ...
-//             my_render_function( htk.handmodel.GetPose(), my_hand_rig); 
-//       }
 	}
 }
 catch (const char *c)

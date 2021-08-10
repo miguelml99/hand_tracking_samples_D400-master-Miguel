@@ -51,10 +51,10 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
 CNN baby_gestures_cnn()
 {
     CNN cnn({});
-    cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 3, 3, 1, 16 }, { 8, 6, 16 }));
-    cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
-    cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
-    cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
+    //cnn.layers.push_back(new CNN::LFull(120, 128));
+    //cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+
+    cnn.layers.push_back(new CNN::LFull(120, 32));
     cnn.layers.push_back(new CNN::LActivation<TanH>(32));
     cnn.layers.push_back(new CNN::LFull(32, 6));
     cnn.layers.push_back(new CNN::LSoftMax(6));
@@ -91,25 +91,30 @@ int main(int argc, char* argv[])
 
     string fist = "../datasets/_Puño cerrado/hand_data_1";
     string closed_palm = "../datasets/_Palma dedos juntos/hand_data_0";
-    string opened_palm = "../datasets/_Palma dedos separados/hand_data_0";
-    string wrist_flexion = "../datasets/_Flexion muñeca/hand_data_0";
+    string opened_palm = "../datasets/_Palma dedos separados/hand_data_1";
+    string wrist_flexion1 = "../datasets/_Flexion muñeca/hand_data_0";
+    string wrist_flexion2 = "../datasets/_Flexion muñeca/hand_data_1";
     string wrist_extension = "../datasets/_Extension muñeca/hand_data_0";
     string radial_deviation = "../datasets/_Abduccion muneca (hacia menique)/hand_data_0";
     string ulnar_deviation = "../datasets/_Abduccion muneca (hacia pulgar)/hand_data_0";
+    string rock = "../datasets/_Rock/hand_data_0";
     
     //htk.handmodel.rigidbodies.size() = 17;
 
     /************SELECTION OF DATASETS WITH POSE INFO FOR TRAINING*****************/
-    std::vector<Frame> frames = load_dataset(fist, 17, compress); 
+    std::vector<Frame> frames = load_dataset(fist, 17, compress);
     std::vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
     std::vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
-    //std::vector<Frame> frames4 = load_dataset(wrist_flexion, 17, compress);
+    //std::vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
+    std::vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
+    //std::vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17, compress);
+    //frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
     //std::vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
     //std::vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
     //std::vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
    
     /************DATASETS PROCESSING INTO SIMPLER VECTOR THAT CNN CAN ANALYSE*****************/
-
+    
     //************CATEGORY 0 - Closed Fist
     for (int i = 0; i < frames.size(); i++)
     {
@@ -133,7 +138,9 @@ int main(int argc, char* argv[])
         labels.push_back(std::vector<float>(categories.size(), 0.0f));
         labels.back()[0] = 1.0f; // 0 is the number of the category or output node
         sample_in = vector<float>();
+
     }
+    
     
     //************CATEGORY 1 - closed palm 
     for (int i = 0; i < frames2.size(); i++)
@@ -158,6 +165,7 @@ int main(int argc, char* argv[])
         labels.push_back(std::vector<float>(categories.size(), 0.0f));
         labels.back()[1] = 1.0f; // 1 is the number of the corresponding category or output node
         sample_in = vector<float>();
+
     }
 
     
@@ -184,9 +192,9 @@ int main(int argc, char* argv[])
         labels.push_back(std::vector<float>(categories.size(), 0.0f));
         labels.back()[2] = 1.0f; 
         sample_in = vector<float>();
+
     }
     
-    /*
     //************CATEGORY 3 - wrist flexion
     for (int i = 0; i < frames4.size(); i++)
     {
@@ -211,7 +219,33 @@ int main(int argc, char* argv[])
         labels.back()[3] = 1.0f;
         sample_in = vector<float>();
     }
+    /*
+    //************CATEGORY 6 -  rock
+    for (int i = 0; i < frames3_1.size(); i++)
+    {
+        auto& current_frame = frames3_1[i];
 
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[5] = 1.0f;
+        sample_in = vector<float>();
+
+    }
+    
     //************CATEGORY 4 - wrist extension
     for (int i = 0; i < frames5.size(); i++)
     {
@@ -238,7 +272,7 @@ int main(int argc, char* argv[])
     }
     
 
-    //************CATEGORY 5 - 
+    //************CATEGORY 5 - radial deviation
     for (int i = 0; i < frames6.size(); i++)
     {
         auto& current_frame = frames6[i];
@@ -270,7 +304,7 @@ int main(int argc, char* argv[])
         switch (std::tolower(key))
         {
         case 'q': case 27: exit(0); break;  // ESC is already handled in mswin.h MsgProc
-        case 's': std::cout << "saving cnn..."; cnn.saveb("HandGestureRecognition_56(0)cat.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
+        case 's': std::cout << "saving cnn..."; cnn.saveb("HGR_0123(5)cat_2layersEVEN_NOCOM.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
         //case 't': if (key == 'T') trainmode++; else trainmode = (!trainmode) * 5; break; // t toggles while shift-T will continue to increas amount of backprop iterations per frame
         case 't': trainmode = !trainmode; break;
         default:
@@ -287,7 +321,7 @@ int main(int argc, char* argv[])
     while (glwin.WindowUp())
     {
         while (currentframe == prevframe){
-            currentframe = uniform_rand(0, (int)samples.size() - 1);        
+            currentframe = uniform_rand(0, (int)samples.size() - 1)/ 2 * 2;
         }
        
         prevframe = currentframe;
@@ -295,7 +329,7 @@ int main(int argc, char* argv[])
         
         if (trainmode)
         {
-            currentframe = uniform_rand(0, (int)samples.size() - 1); // keep it even so that odd ones can be 'testing set'
+            currentframe = uniform_rand(0, (int)samples.size() - 1)/ 2 * 2; // keep it even so that odd ones can be 'testing set'
 
             mse = cnn.Train(samples[currentframe], labels[currentframe], 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
             train_count++;

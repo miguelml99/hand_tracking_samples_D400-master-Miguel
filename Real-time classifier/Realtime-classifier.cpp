@@ -51,79 +51,25 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
 CNN baby_gestures_cnn()
 {
     CNN cnn({});
-    cnn.layers.push_back(new CNN::LConv({ 12, 10, 1 }, { 5, 5, 1, 16 }, { 8, 6, 16 }));
-    cnn.layers.push_back(new CNN::LActivation<TanH>(8 * 6 * 16));
-    cnn.layers.push_back(new CNN::LMaxPool(int3(8, 6, 16)));
-    cnn.layers.push_back(new CNN::LFull(4 * 3 * 16, 32));
+    //cnn.layers.push_back(new CNN::LFull(120, 128));
+    //cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+
+    cnn.layers.push_back(new CNN::LFull(120, 32));
     cnn.layers.push_back(new CNN::LActivation<TanH>(32));
     cnn.layers.push_back(new CNN::LFull(32, 6));
     cnn.layers.push_back(new CNN::LSoftMax(6));
     cnn.Init(); // initializes weights
     return cnn;
 }
-/*
-CNN gestures_cnn()  // probably too big to learn quickly with small ground truth sample size
-{
-    CNN cnn({});
-    cnn.layers.push_back(new CNN::LConv({ 64, 64, 1 }, { 5, 5, 1, 16 }, { 60, 60, 16 }));
-    cnn.layers.push_back(new CNN::LActivation<TanH>(60 * 60 * 16));
-    cnn.layers.push_back(new CNN::LMaxPool(int3(60, 60, 16)));
-    cnn.layers.push_back(new CNN::LMaxPool(int3(30, 30, 16)));
-    cnn.layers.push_back(new CNN::LConv({ 15, 15, 16 }, { 4, 4, 16, 64 }, { 12, 12, 64 }));
 
-    cnn.layers.push_back(new CNN::LActivation<TanH>(12 * 12 * 64));
-    cnn.layers.push_back(new CNN::LMaxPool(int3(12, 12, 64)));
-
-    cnn.layers.push_back(new CNN::LFull(6 * 6 * 64, 64));
-    cnn.layers.push_back(new CNN::LActivation<TanH>(64));
-    cnn.layers.push_back(new CNN::LFull(64, 6));
-    cnn.layers.push_back(new CNN::LSoftMax(6));
-    cnn.Init();
-    return cnn;
-}
-*/
 int main(int argc, char* argv[]) 
 {
     CNN cnn2 = baby_gestures_cnn(); 
 
-    cnn2.loadb("../Classifier/HandGestureRecognition0.cnnb"); //load CNN that is going to be used at first
-
-    //LOADING DATASET WITH POSE INFO
-
-    std::vector<std::string> things_yet_to_load;
-
-    if (!things_yet_to_load.size()) // Checks if we have loaded something in it before- But if there was a cnn previously loaded, could it be trained again? 
-    {                               
-        //things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
-       
-        things_yet_to_load.push_back("../datasets/_Puño cerrado/hand_data_0"); //podemos concatenar datasets para el entrenamiento
-        things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_0"); //Miguel: here we write the route of the data we are using to build the cnn
-       // things_yet_to_load.push_back("../datasets/_Palma dedos juntos/hand_data_1"); //Miguel: here we write the route of the data we are using to build the cnn
-    }
-
-    std::string firstname = things_yet_to_load.back();
-    things_yet_to_load.pop_back();
-
-    std::string secondname = things_yet_to_load.back();
-    things_yet_to_load.pop_back();
-
-    //htk.handmodel.rigidbodies.size() = 17;
-    //std::vector<Frame> frames = load_dataset(firstname, 17, compress);  //Seleccionas el dataset que quieres cargar para el entrenamiento
-
-    std::vector<Frame> frames = load_dataset(firstname, 17, compress);  //Seleccionas el dataset que quieres cargar para el entrenamiento
-    std::vector<Frame> frames2 = load_dataset(secondname, 17, compress);  //Seleccionas el dataset que quieres cargar para el entrenamiento
-    //std::vector<Frame> frames(std::begin(frames1), std::end(frames1));
-
-
-    //**********hand tracking system training: *********
-
+    cnn2.loadb("../Train-Classifier/HGR_0123(5)cat_2fullylayers.cnnb"); //load CNN that is going to be used at first
 
     int currentframe = 0;
     int prevframe = -1;
-
-    cout << "Total number of frames loaded " << frames.size() + frames2.size() << endl;
-
-    //*******Simpler classification from depth samples  ********
 
     std::vector<float> errorhistory(128, 1.0f);
     std::vector<float> errorhistory2;
@@ -132,58 +78,220 @@ int main(int argc, char* argv[])
     float3 catcolors[] = { {0,0,1},{0,1,0},{1,0,0},{1,1,0},{1,0,1},{0,1,1} };
 
     // Second training trial 
-    std::vector<std::vector<float>> samples2;
-    std::vector<std::vector<float>> labels2;
+    std::vector<std::vector<float>> samples;
+    std::vector<std::vector<float>> labels;
     vector<float> sample_in;
 
-    //************CATEGORY 0 - openned palm 
+    /************LOADING DATASET ROUTES*****************/
+
+    string fist = "../datasets/_Puño cerrado/hand_data_1";
+    string closed_palm = "../datasets/_Palma dedos juntos/hand_data_0";
+    string opened_palm = "../datasets/_Palma dedos separados/hand_data_1";
+    string wrist_flexion1 = "../datasets/_Flexion muñeca/hand_data_0";
+    string wrist_flexion2 = "../datasets/_Flexion muñeca/hand_data_1";
+    string wrist_extension = "../datasets/_Extension muñeca/hand_data_0";
+    string radial_deviation = "../datasets/_Abduccion muneca (hacia menique)/hand_data_0";
+    string ulnar_deviation = "../datasets/_Abduccion muneca (hacia pulgar)/hand_data_0";
+    string rock = "../datasets/_Rock/hand_data_0";
+
+    //htk.handmodel.rigidbodies.size() = 17;
+
+    /************SELECTION OF DATASETS WITH POSE INFO FOR TRAINING*****************/
+    std::vector<Frame> frames = load_dataset(fist, 17, compress);
+    std::vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
+    std::vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
+    //std::vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
+    std::vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
+    //std::vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17);
+    //frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
+    //std::vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
+    //std::vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
+    //std::vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
+
+    /************DATASETS PROCESSING INTO SIMPLER VECTOR THAT CNN CAN ANALYSE*****************/
+
+    //************CATEGORY 0 - Closed Fist
     for (int i = 0; i < frames.size(); i++)
     {
-        auto& frame2 = frames[i];
+        auto& current_frame = frames[i];
 
-        for (int i = 0; i < (int)frame2.pose.size(); i++)
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
         {
             for (int j = 0; j < 3; j++)
             {
-                sample_in.push_back(frame2.pose[i].position[j]);
+                sample_in.push_back(current_frame.pose[i].position[j]);
             }
 
             for (int j = 0; j < 4; j++)
             {
-                sample_in.push_back(frame2.pose[i].orientation[j]);
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
             }
         }
-        sample_in.push_back(0);
-        samples2.push_back(sample_in);
-        labels2.push_back(std::vector<float>(categories.size(), 0.0f));
-        labels2.back()[0] = 1.0f; // 0 is the number of the category or output node
+        //sample_in.insert(sample_in.end(), begin(completesamples), end(completesamples));
+        sample_in.push_back(0); // A 0 needs to be added to the vector to complete the input size of 120
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[0] = 1.0f; // 0 is the number of the category or output node
         sample_in = vector<float>();
+
     }
 
-    //************CATEGORY 1 - Closed Fist
+
+    //************CATEGORY 1 - closed palm 
     for (int i = 0; i < frames2.size(); i++)
     {
-        auto& frame2 = frames2[i];
+        auto& current_frame = frames2[i];
 
-        for (int i = 0; i < (int)frame2.pose.size(); i++)
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
         {
             for (int j = 0; j < 3; j++)
             {
-                sample_in.push_back(frame2.pose[i].position[j]);
+                sample_in.push_back(current_frame.pose[i].position[j]);
             }
 
             for (int j = 0; j < 4; j++)
             {
-                sample_in.push_back(frame2.pose[i].orientation[j]);
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
             }
         }
         sample_in.push_back(0);
-        samples2.push_back(sample_in);
-        labels2.push_back(std::vector<float>(categories.size(), 0.0f));
-        labels2.back()[1] = 1.0f; // 1 is the number of the category or output node
+
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[1] = 1.0f; // 1 is the number of the corresponding category or output node
+        sample_in = vector<float>();
+
+    }
+
+
+    //************CATEGORY 2 -  openned palm
+    for (int i = 0; i < frames3.size(); i++)
+    {
+        auto& current_frame = frames3[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[2] = 1.0f;
+        sample_in = vector<float>();
+
+    }
+
+    //************CATEGORY 3 - wrist flexion
+    for (int i = 0; i < frames4.size(); i++)
+    {
+        auto& current_frame = frames4[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[3] = 1.0f;
+        sample_in = vector<float>();
+    }
+    /*
+    //************CATEGORY 6 -  rock
+    for (int i = 0; i < frames3_1.size(); i++)
+    {
+        auto& current_frame = frames3_1[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[5] = 1.0f;
+        sample_in = vector<float>();
+
+    }
+    
+    //************CATEGORY 4 - wrist extension
+    for (int i = 0; i < frames5.size(); i++)
+    {
+        auto& current_frame = frames5[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[4] = 1.0f;
         sample_in = vector<float>();
     }
 
+
+    //************CATEGORY 5 - radial deviation
+    for (int i = 0; i < frames6.size(); i++)
+    {
+        auto& current_frame = frames6[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[5] = 1.0f;
+        sample_in = vector<float>();
+    }
+    */
 
    // while (glwin.WindowUp())
     {
@@ -192,19 +300,19 @@ int main(int argc, char* argv[])
 
         int sample_frame = 1;
 
-        while (sample_frame < samples2.size())
+        while (sample_frame < samples.size())
         {         
-            auto cnn_out = cnn2.Eval(samples2[sample_frame]);
+            auto cnn_out = cnn2.Eval(samples[sample_frame]);
             // __int64 cycles_fprop = __rdtsc() - timestart;
 
             int best = std::max_element(cnn_out.begin(), cnn_out.end()) - cnn_out.begin();
-            int category = std::max_element(labels2[sample_frame].begin(), labels2[sample_frame].end()) - labels2[sample_frame].begin();
+            int category = std::max_element(labels[sample_frame].begin(), labels[sample_frame].end()) - labels[sample_frame].begin();
 
             for (int i = 0; i < 6; i++)
             {
                 cout << cnn_out[i] << "\t";
             }
-            cout << endl << "Frame number: " << sample_frame << "  //  Predicted category: " << best << " // Corresponding category: " << category << endl << endl;
+            cout << endl << "Frame number:\t" << sample_frame << "  //  Predicted category:\t" << best << " // Corresponding category:\t" << category << endl << endl;
             sample_frame += 50;
         }
 
