@@ -40,13 +40,13 @@ using namespace std;
 CNN baby_gestures_cnn()
 {
 	CNN cnn({});
-	//cnn.layers.push_back(new CNN::LFull(120, 128));
-	//cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+	cnn.layers.push_back(new CNN::LFull(120, 128));
+	cnn.layers.push_back(new CNN::LActivation<TanH>(128));
 
-	cnn.layers.push_back(new CNN::LFull(120, 32));
+	cnn.layers.push_back(new CNN::LFull(128, 32));
 	cnn.layers.push_back(new CNN::LActivation<TanH>(32));
-	cnn.layers.push_back(new CNN::LFull(32, 6));
-	cnn.layers.push_back(new CNN::LSoftMax(6));
+	cnn.layers.push_back(new CNN::LFull(32, 7));
+	cnn.layers.push_back(new CNN::LSoftMax(7));
 	cnn.Init(); // initializes weights
 	return cnn;
 }
@@ -72,8 +72,11 @@ int main(int argc, char *argv[]) try
 
 	//CLASSIFIER:
 	CNN cnn2 = baby_gestures_cnn();
-	cnn2.loadb("../Train-Classifier/HGR_0123(5)cat_2layers.cnnb"); //load CNN that is going to be used at first
+	cnn2.loadb("../Train-Classifier/HGR_01234(5)cat_3layersEVEN.cnnb"); //load CNN that is going to be used at first
 	vector<float> cnn_input;
+	vector<float> nullpose(7, 0);
+
+	//cnn_input.insert(cnn_input.end(), begin(nullpose), end(nullpose));
 
 	if (argc == 3)
 	{
@@ -113,11 +116,18 @@ int main(int argc, char *argv[]) try
 	};
 	htk.load_config( "../config.json");
 
-	std::cout << htk.handmodel.rigidbodies.size() << std::endl;
+	//std::cout << htk.handmodel.rigidbodies.size() << std::endl;
 
 	//std::cout << "Valores angulo de cada dedo en salida CNN  0 is open, 3.14 (180 degrees) is clenched." << std::endl;
 
 	//std::cout << "Valores angulos de euler de la muñeca respecto al ordenador: Wristroll, pitch , tilt (yaw) y el angulo del primer dedo con respecto a la palma" << std::endl;
+	cout << endl << "******************************************************************************" << endl;
+	cout << "************  HAND GESTURE RECOGNITION SYSTEM - VISUALIZER 1.0 ***************" << endl;
+	cout << "******************************************************************************" << endl;
+
+	cout << endl << "Instructions: Place right hand in front of the cameras FOV, move the hand to each \n gesture postiion, and let the system predict your current hand gesture" << endl << endl;
+
+	
 
 	while (glwin.WindowUp())
 	{
@@ -137,6 +147,7 @@ int main(int argc, char *argv[]) try
 										 // Constructores "move" son usados en lugar de copy constructors en c++
 
 		//******************************CLASSIFIER: ******************************************
+		//cnn_input.insert(cnn_input.end(), begin(nullpose), end(nullpose));
 
 		for (int i = 0; i < htk.handmodel.GetPose().size(); i++)
 		{
@@ -148,9 +159,10 @@ int main(int argc, char *argv[]) try
 			for (int j = 0; j < 4; j++)
 			{
 				cnn_input.push_back(htk.handmodel.GetPose()[i].orientation[j]);
-			}
-			cnn_input.push_back(0);
+			}		
 		}
+
+		cnn_input.push_back(0);
 
 		auto cnn_out = cnn2.Eval(cnn_input);
 		// __int64 cycles_fprop = __rdtsc() - timestart;
@@ -162,12 +174,45 @@ int main(int argc, char *argv[]) try
 
 
 		//std::cout << htk.handmodel.GetPose()[0].position << htk.handmodel.GetPose()[0].orientation;
-		cout << " CNN output:\t";
+
+		cout << "  Predicted category:\t";//<< best << "\r";
+
+		switch (best) {
+		case 0:
+			cout << "FIST CLENCHED" << "\t";
+			break;
+
+		case 1:
+			cout << "PALM CLOSED " << "\t";
+			break;
+
+		case 2:
+			cout << "PALM OPENED " << "\t";
+			break;
+
+		case 3:
+			cout << "WRIST FLEXION" << "\t";
+			break;
+
+		case 4:
+			cout << "WRIST EXTENSION" << "\t";
+			break;
+
+		case 5:
+			cout << "ROCKING HAND" << "\t";
+			break;
+
+		default:
+			cout << " No gesture recognized" << "\t";
+
+		}
+
+		cout << "// CNN output:\t";
 		for (int i = 0; i < (int)cnn_out.size(); i++)
 		{
-			cout << setprecision(3) << cnn_out[i] << "\t";
+			cout << setprecision(2) << cnn_out[i] << "\t";
 		}
-		cout << " //\tPredicted category:\t" << best << "\r";
+		cout << "\r" ; 
 
 		// *****************OPEN GL : ************
 

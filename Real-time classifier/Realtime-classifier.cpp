@@ -51,13 +51,13 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
 CNN baby_gestures_cnn()
 {
     CNN cnn({});
-    //cnn.layers.push_back(new CNN::LFull(120, 128));
-    //cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+    cnn.layers.push_back(new CNN::LFull(120, 128));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(128));
 
-    cnn.layers.push_back(new CNN::LFull(120, 32));
+    cnn.layers.push_back(new CNN::LFull(128, 32));
     cnn.layers.push_back(new CNN::LActivation<TanH>(32));
-    cnn.layers.push_back(new CNN::LFull(32, 6));
-    cnn.layers.push_back(new CNN::LSoftMax(6));
+    cnn.layers.push_back(new CNN::LFull(32, 7));
+    cnn.layers.push_back(new CNN::LSoftMax(7));
     cnn.Init(); // initializes weights
     return cnn;
 }
@@ -66,7 +66,7 @@ int main(int argc, char* argv[])
 {
     CNN cnn2 = baby_gestures_cnn(); 
 
-    cnn2.loadb("../Train-Classifier/HGR_0123(5)cat_2fullylayers.cnnb"); //load CNN that is going to be used at first
+    cnn2.loadb("../Train-Classifier/HGR_01234(5)cat_3layersEVEN.cnnb"); //load CNN that is going to be used at first
 
     int currentframe = 0;
     int prevframe = -1;
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
     std::vector<float> errorhistory(128, 1.0f);
     std::vector<float> errorhistory2;
 
-    std::vector<int> categories(6, 0);
+    std::vector<int> categories(7, 0);
     float3 catcolors[] = { {0,0,1},{0,1,0},{1,0,0},{1,1,0},{1,0,1},{0,1,1} };
 
     // Second training trial 
@@ -97,16 +97,16 @@ int main(int argc, char* argv[])
     //htk.handmodel.rigidbodies.size() = 17;
 
     /************SELECTION OF DATASETS WITH POSE INFO FOR TRAINING*****************/
-    std::vector<Frame> frames = load_dataset(fist, 17, compress);
-    std::vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
-    std::vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
-    //std::vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
-    std::vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
-    //std::vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17);
-    //frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
-    //std::vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
-    //std::vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
-    //std::vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
+    vector<Frame> frames = load_dataset(fist, 17, compress);
+    vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
+    vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
+    vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
+    vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
+    vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17, compress);
+    frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
+    vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
+    //vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
+    //vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
 
     /************DATASETS PROCESSING INTO SIMPLER VECTOR THAT CNN CAN ANALYSE*****************/
 
@@ -214,8 +214,8 @@ int main(int argc, char* argv[])
         labels.back()[3] = 1.0f;
         sample_in = vector<float>();
     }
-    /*
-    //************CATEGORY 6 -  rock
+    
+    //************CATEGORY 5 -  rock
     for (int i = 0; i < frames3_1.size(); i++)
     {
         auto& current_frame = frames3_1[i];
@@ -266,7 +266,7 @@ int main(int argc, char* argv[])
         sample_in = vector<float>();
     }
 
-
+    /*
     //************CATEGORY 5 - radial deviation
     for (int i = 0; i < frames6.size(); i++)
     {
@@ -291,6 +291,31 @@ int main(int argc, char* argv[])
         labels.back()[5] = 1.0f;
         sample_in = vector<float>();
     }
+    
+    //************CATEGORY 6 -  ulnar deviation
+    for (int i = 0; i < frames7.size(); i++)
+    {
+        auto& current_frame = frames7[i];
+
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[6] = 1.0f;
+        sample_in = vector<float>();
+    }
     */
 
    // while (glwin.WindowUp())
@@ -313,7 +338,7 @@ int main(int argc, char* argv[])
                 cout << cnn_out[i] << "\t";
             }
             cout << endl << "Frame number:\t" << sample_frame << "  //  Predicted category:\t" << best << " // Corresponding category:\t" << category << endl << endl;
-            sample_frame += 50;
+            sample_frame += 100;
         }
 
     

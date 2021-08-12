@@ -51,13 +51,12 @@ void compress(Frame& frame)   // takes a frame of data and keeps only the releva
 CNN baby_gestures_cnn()
 {
     CNN cnn({});
-    //cnn.layers.push_back(new CNN::LFull(120, 128));
-    //cnn.layers.push_back(new CNN::LActivation<TanH>(128));
-
-    cnn.layers.push_back(new CNN::LFull(120, 32));
+    cnn.layers.push_back(new CNN::LFull(120, 128));
+    cnn.layers.push_back(new CNN::LActivation<TanH>(128));
+    cnn.layers.push_back(new CNN::LFull(128, 32));
     cnn.layers.push_back(new CNN::LActivation<TanH>(32));
-    cnn.layers.push_back(new CNN::LFull(32, 6));
-    cnn.layers.push_back(new CNN::LSoftMax(6));
+    cnn.layers.push_back(new CNN::LFull(32, 7));
+    cnn.layers.push_back(new CNN::LSoftMax(7));
     cnn.Init(); // initializes weights
     return cnn;
 }
@@ -66,19 +65,20 @@ int main(int argc, char* argv[])
 {
     CNN cnn = baby_gestures_cnn(); 
 
-    //ofstream error_history ("Error_history.csv"); // CVS file in which we can load the learning curve of the network 
+    //ofstream error_history ("Error_history.csv"); // CVS file in which we can save the learning curve of the network 
 
     //cnn.loadb("../Classifier/HandGestureRecognition.cnnb"); //load CNN that is going to be used at first
     GLWin glwin("Gesture recognition system", 300, 200);
 
     //std::vector<float> completesamples(25, 0);
-    std::vector<int> categories(6, 0);
+    std::vector<int> categories(7, 0);
 
     int currentframe = 0;
     int prevframe = -1;
 
     bool   trainmode = false;
     int    train_count = 0;      // how many bprop iterations since last save 
+    int    error_count = 0;      // mse error saving count
 
     std::default_random_engine rng;
 
@@ -102,17 +102,23 @@ int main(int argc, char* argv[])
     //htk.handmodel.rigidbodies.size() = 17;
 
     /************SELECTION OF DATASETS WITH POSE INFO FOR TRAINING*****************/
-    std::vector<Frame> frames = load_dataset(fist, 17, compress);
-    std::vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
-    std::vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
-    //std::vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
-    std::vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
-    //std::vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17, compress);
-    //frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
-    //std::vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
-    //std::vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
-    //std::vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
+    vector<Frame> frames = load_dataset(fist, 17, compress);
+    vector<Frame> frames2 = load_dataset(closed_palm, 17, compress);
+    vector<Frame> frames3 = load_dataset(opened_palm, 17, compress);
+    vector<Frame> frames3_1 = load_dataset(rock, 17, compress);
+    vector<Frame> frames4 = load_dataset(wrist_flexion1, 17, compress);
+    vector<Frame> frames4_1 = load_dataset(wrist_flexion2, 17, compress);
+    frames4.insert(frames4.end(), std::begin(frames4_1), std::end(frames4_1));
+    vector<Frame> frames5 = load_dataset(wrist_extension, 17, compress);
+    //vector<Frame> frames6 = load_dataset(radial_deviation, 17, compress);
+    //vector<Frame> frames7 = load_dataset(ulnar_deviation, 17, compress);
+
+    int number_frames = frames.size() + frames2.size() + frames3.size() + frames3_1.size() + frames4.size() + frames5.size();// +frames6.size() + frames7.size();
    
+    cout << "Total number of frames loaded " << number_frames << endl;
+
+    ofstream error_history ("Error_history 4000frames.csv"); // CVS file in which we can save the learning curve of the network
+
     /************DATASETS PROCESSING INTO SIMPLER VECTOR THAT CNN CAN ANALYSE*****************/
     
     //************CATEGORY 0 - Closed Fist
@@ -138,9 +144,7 @@ int main(int argc, char* argv[])
         labels.push_back(std::vector<float>(categories.size(), 0.0f));
         labels.back()[0] = 1.0f; // 0 is the number of the category or output node
         sample_in = vector<float>();
-
     }
-    
     
     //************CATEGORY 1 - closed palm 
     for (int i = 0; i < frames2.size(); i++)
@@ -219,8 +223,8 @@ int main(int argc, char* argv[])
         labels.back()[3] = 1.0f;
         sample_in = vector<float>();
     }
-    /*
-    //************CATEGORY 6 -  rock
+    
+    //************CATEGORY 5 -  rock
     for (int i = 0; i < frames3_1.size(); i++)
     {
         auto& current_frame = frames3_1[i];
@@ -271,7 +275,7 @@ int main(int argc, char* argv[])
         sample_in = vector<float>();
     }
     
-
+    /*
     //************CATEGORY 5 - radial deviation
     for (int i = 0; i < frames6.size(); i++)
     {
@@ -296,15 +300,39 @@ int main(int argc, char* argv[])
         labels.back()[5] = 1.0f;
         sample_in = vector<float>();
     }
-    */
+    
+    //************CATEGORY 6 -  ulnar deviation
+    for (int i = 0; i < frames7.size(); i++)
+    {
+        auto& current_frame = frames7[i];
 
+        for (int i = 0; i < (int)current_frame.pose.size(); i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].position[j]);
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                sample_in.push_back(current_frame.pose[i].orientation[j]);
+            }
+        }
+
+        sample_in.push_back(0);
+        samples.push_back(sample_in);
+        labels.push_back(std::vector<float>(categories.size(), 0.0f));
+        labels.back()[6] = 1.0f;
+        sample_in = vector<float>();
+    }
+    */
     //Keyboard implementation
     glwin.keyboardfunc = [&](unsigned char key, int x, int y)->void
     {
         switch (std::tolower(key))
         {
         case 'q': case 27: exit(0); break;  // ESC is already handled in mswin.h MsgProc
-        case 's': std::cout << "saving cnn..."; cnn.saveb("HGR_0123(5)cat_2layersEVEN_NOCOM.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
+        case 's': std::cout << "saving cnn..."; cnn.saveb("HGR_01234(5)cat_2layersEVEN.cnnb"); std::cout << " ...done.  file: handposedd.cnnb\n"; break;  // ctrl-t 
         //case 't': if (key == 'T') trainmode++; else trainmode = (!trainmode) * 5; break; // t toggles while shift-T will continue to increas amount of backprop iterations per frame
         case 't': trainmode = !trainmode; break;
         default:
@@ -332,10 +360,16 @@ int main(int argc, char* argv[])
             currentframe = uniform_rand(0, (int)samples.size() - 1)/ 2 * 2; // keep it even so that odd ones can be 'testing set'
 
             mse = cnn.Train(samples[currentframe], labels[currentframe], 0.001f);  // used 0.001 when training from randomly initialized weights to avoid exploding gradient problem, 
-            train_count++;
+            
             cout << setprecision(3) << " Mean square error:  " << mse << " \t- square root of mse: " << sqrt(mse) << "\r";
 
-            //error_history << sqrt(mse) << endl; esto solo si queremos guardar el avance 
+            if (error_count == train_count)
+            {
+                error_history << sqrt(mse) << endl; //esto solo si queremos guardar el avance 
+                error_count += 100;
+            }
+            
+            train_count++;
         }
 
        // Graphical user Interface and GL window:
@@ -364,6 +398,6 @@ int main(int argc, char* argv[])
         glwin.SwapBuffers();     
     }
     
-    //error_history.close();
+    error_history.close();
     return 0;
 }
