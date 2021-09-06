@@ -1,5 +1,0 @@
-﻿  dataexporter.cpp
-C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\stb_image_write.h(222,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\stb_image_write.h(613,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\third_party\stb_image_write.h(997,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  dataset-exporter-vs2017.vcxproj -> C:\Users\migue\Documents\_TFG\Visual Studio\hand_tracking_samples_D400-master\build\dataset-exporter-vs2017_Debug_Win32.exe
